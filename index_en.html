@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drupal Documentation</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="css/responsive.css" media="screen">
+	<link rel="stylesheet" href="css/style.css" media="screen">
+	<link rel="stylesheet" href="css/prettify.css" media="screen">
+	<link rel="stylesheet" href="css/flexslider.css" media="screen">
+	<link rel="canonical" href="//www.templatemonster.com/help/quick-start-guide/prestashop-themes/master/index_en.html">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/prettify.js"></script>
+	<script src="js/jquery-migrate-1.1.0.js"></script>
+	<script src="js/bootstrap-affix.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/script.js"></script>
+
+	<!--[if lt IE 8]>
+		<div style='text-align:center'>
+			<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode">
+				<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg"border="0"alt=""/>
+			</a>
+		</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Header
+	================================================== -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<article class="span4">
+					<a class="brand" href="/help/" target="_blank"></a>
+				</article>
+				<article class="span6">
+					<h1>
+						<img alt="" src="img/drupal-logo.png">&nbsp;Drupal documentation
+					</h1>
+				</article>
+				<article class="span2">
+					<div id="languages" class="select-menu pull-right">
+						<div id="lang_icon" class="select-menu_icon">
+							<b>En</b><i class="icon-angle-down"></i>
+						</div>
+						<ul id="lang_list" class="select-menu_list">
+							<li class="active"><a href="index_en.html"><span>English </span><img src="img/flags/gb.png" height="14" width="22" alt="en"></a></li>
+							<li><a href="index_ru.html"><span>Русский </span><img src="img/flags/ru.png" height="14" width="22" alt="ru"></a></li>
+						</ul>
+					</div>
+					<div id="versions" class="select-menu pull-right">
+						<div class="select-menu_icon">
+							<b>v1-0</b><i class="icon-angle-down"></i>
+						</div>
+						<ul class="select-menu_list">
+							<li class="active"><a href="/help/quick-start-guide/drupal-themes/v1-0/index_en.html"><span>v1-0</span></a></li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</div>
+	</header>
+	
+	<!-- Content
+	================================================== -->
+	<div id="content"> 
+		<div class="bg-content-top">
+			<div class="container">
+				<div class="row">
+					<!-- Docs nav
+					================================================== -->
+					<div class="span3"> 
+						<div id="nav_container">
+							<a href="javascript:;" id="affect_all">
+								<span class="expand">
+									<i class="icon-angle-down"></i>
+								</span>
+								<span class="close">
+									<i class="icon-angle-up"></i>
+								</span>
+							</a>
+							<div class="clearfix"></div>
+							<ul class="nav nav-list bs-docs-sidenav" id="nav">
+								<li class="nav-item item1">
+									<dl class="slide-down">
+										<dt>
+											<a href="#preparations" class="icon-check">Prepare</a>
+											<i class="icon-sample"></i>
+										</dt>
+										<dd>
+											<ul class="list">
+												<li><a href="#requirements">Minimum requirements</a></li>
+												<li><a href="#downloading">Downloading Drupal engine</a></li>
+												<li><a href="#extracting_files">Extracting files</a></li>
+												<li><a href="#upl_files">Uploading Drupal to a server</a></li>
+												<li><a href="#db_creating">Creating a database</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li class="nav-item item2">
+									<dl class="slide-down">
+										<dt>
+											<a href="#theme_installation" class="icon-dropbox">Drupal engine and theme installation</a>
+											<i class="icon-sample"></i>
+										</dt>
+										<dd>
+											<ul class="list">
+												<li><a href="#inst_demo">Installing Drupal theme with sample data</a></li>
+												<li><a href="#inst_no_demo">Installing Drupal theme without sample data</a></li>
+												<li><a href="#inst_demo_exs_site">Installing Drupal theme with sample data over the existing website</a></li>
+												<li><a href="#inst_no_demo_exs_site">Installing Drupal theme without sample data over the existing website</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li class="nav-item item3">
+									<dl class="slide-down">
+										<dt>
+											<a href="#settings" class="icon-cogs">Configuration</a>
+											<i class="icon-sample"></i>
+										</dt>
+										<dd>
+											<ul class="list">
+												<li><a href="#drupal_settings">Drupal settings</a></li>
+												<li><a href="#theme_settings">Theme settings</a></li>
+												<li><a href="#block_settings">Block settings</a></li>
+												<li><a href="#modules_settings">Module settings</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li class="nav-item item3">
+									<dl class="slide-down">
+										<dt>
+											<a href="#content_manage" class="icon-edit">Content management</a>
+											<i class="icon-sample"></i>
+										</dt>
+										<dd>
+											<ul class="list">
+												<li><a href="#menu_manage">Menu management</a></li>
+												<li><a href="#node_manage">Content type management</a></li>
+												<li><a href="#page_manage">Page management</a></li>
+												<li><a href="#views_manage">View management</a></li>
+												<li><a href="#media_manage">Media management</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li class="nav-item item3">
+									<dl class="slide-down">
+										<dt>
+											<a href="#chart" class=" icon-comments-alt">Olark chat</a>
+											<i class="icon-sample"></i>
+										</dt>
+										<dd></dd>
+									</dl>
+								</li>
+								<li class="nav-item item3">
+									<dl class="slide-down">
+										<dt>
+											<a href="#conclusion" class="icon-link">Useful links</a>
+										</dt>
+										<dd></dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- box-content
+					================================================== -->
+					<div class="span9">
+						<div class="box-content">
+							<!-- block-started
+							================================================== -->
+							<section class="block-templates" id="preparations">
+								<h2><i class="icon-check"></i> Prepare</h2>
+
+								<article id="requirements">
+									<h3>Minimum requirements</h3>
+									<p>To feel comfortable working with your Drupal template your hosting should match the engine requirements. Most of the hosting companies match the standards. However, there can be exceptions, that is why you should check the following properties.</p>
+
+									<h4>Disc space</h4>
+									<p>Minimum Drupal installation requires 15 Mb of free disc space. Websites, that contain a number of templates and modules require at least 60 Mb. Keep in mind that you will need more space for the files uploaded by users, media, backups and other files.</p>
+									<h4>Web-server</h4>
+									Apache, Nginx or Microsoft IIS.<br>
+									<a href="https://drupal.org/requirements/webserver" target="_blank">More information about the requirements for server</a>
+
+									<h4>Database</h4>
+									<p>MySQL 5.0.15 or higher with PDO, PostgreSQL 8.3 or higher with PDO, SQLite 3.3.7 or higher.</p>
+									<p class="box-error"><span>When installing Drupal, please note that some of the modules may not support PostgreSQL and SQLite databases, in addition, template configuration and sample data are stored in MySQL format. That is why it is recommended to use only MySQL database.</span></p>
+
+									<h4>PHP</h4>
+									PHP 5.2.5 or higher (5.3 recommended).<br>
+									<a href="https://drupal.org/requirements/php" target="_blank">PHP requirements in details</a>
+								</article>
+								
+								<article id="downloading">
+									<h3>Downloading Drupal engine</h3>
+									<p>In case the Drupal engine is already downloaded/installed, skip this step.</p>
+									<p>The first step of Drupal website building is downloading the engine from the official website <a href="https://drupal.org/download" target="_blank">http://drupal.org/</a>.</p>
+									<p><img src="img/downloading-01.png" alt="Downloading Drupal Engine page"></p>
+									<p>Following the link above you can download zip- or tar.gz-archive with the core files.</p>
+									<p>In order to download the latest Drupal version, click the <strong>Download Drupal X.XX</strong> button, where X.XX - the latest version number.</p>
+									<p>In case you are looking for the older Drupal version, follow this link <strong>Other Releases</strong>:</p>
+									<p><img src="img/downloading-03.png" alt="Downloading Drupal Engine other releases"></p>
+									<p>In the <strong>API Version</strong> field, select the required branch on Drupal versions and click <strong>Apply</strong>:</p>
+									<p><img src="img/downloading-04.png" alt="Downloading Drupal Engine other releases. Versions"></p>
+									<p>After that, you will see the full list of the versions branches, where you can download the required version.</p>
+									<p class="box-notification"><span>Please, check the template requirements regarding the version compatibility and make sure to download the correct version.</span></p>
+								</article>
+								
+								<article id="extracting_files">
+									<h3>Extracting the files</h3>
+									<p>When you are done with the downloading, you need to extract the files and folders from the engine package.</p>
+									<p>To extract the files from the Drupal engine ZIP package, you can use any archive manager that can handle ZIP archives, like <strong>WinZip (PC)</strong>, <strong>StuffitExpander (MAC)</strong> etc.</p>
+									<p>The following tutorials will show you how to extract files <a href="/help/extract-archived-files-windows-os.html" target="_blank">WinZip (PC)</a> and <a href="/help/extract-archived-files-mac-os.html" target="_blank">StuffitExpander (MAC)</a>.</p>
+									<div class="box-info"><span>Attention! In case your hosting control panel includes the  <strong>"Extract"</strong> option, you can upload the .zip package to your server and extract the files there. </span></div>
+								</article>
+								
+								<article id="upl_files">
+									<h3>Uploading Drupal to a server</h3>
+									<p>In case you have extracted the files locally on your computer, you need to upload them to a hosting server.</p>
+									<p>Drupal engine should be uploaded to the root directory of your hosting-server. Usually it is named <strong>WWW</strong> or <strong>public_html</strong>. If you do not know the root directory name, please, contact your hosting provider for more information.</p>
+									<p>In order to upload the files to a server, you can use any file manager software like FileZilla, TotalCommander etc. There is also a number of browsers add-ons (e.g. FireFTP for Mozilla Firefox). Also, some of the hosting providers offer the file manager option. Please, check your control panel or contact your hosting provider for more details.</p>
+									<p>Feel free to check the video tutorial <a href="/help/how-upload-files-server-2.html" target="_blank">How to upload files to a server</a> or <a href="/help/how-to-upload-files-to-a-server-using-cpanel-webhost-manager-whm.html" target="_blank">How to upload files to a server using cPanel (WebHost Manager, WHM)</a>.</p>
+								</article>
+								
+								<article id="db_creating">
+									<h3>Creating a database</h3>
+									<p>As it was mentioned above, Drupal installation requires MySQL database. Database can be created in your hosting control panel</p>
+									<p>You can contact your hosting provider in order to get some help creating a database.</p>
+									<p>During the database creation process you will get the following details:</p>
+									<ul class="square-list">
+										<li>Database server name or hostname.</li>
+										<li>Database name.</li>
+										<li>Database username.</li>
+										<li>Password</li>
+									</ul>
+									<p>Please, note these details. You will need them during the installation process.</p>
+									<p>Feel free to check the following instructions:</p>
+									<ul class="square-list">
+										<li><a href="/help/how-create-database.html" target="_blank">How to create a database <i class="icon-external-link"></i></a></li>
+										<li><a href="https://drupal.org/documentation/install/create-database" target="_blank">Create a database <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+							</section>
+							
+							<section class="block-templates" id="theme_installation">
+								<h2><i class="icon-dropbox"></i> Drupal engine and theme installation</h2>
+								<p>In this part you will see different ways of Drupal engine and theme installation. Please, follow this instruction if the Drupal is not installed to your server yet.</p>
+								<p>Before you proceed, you need to decide if you want to install Drupal with sample data included or not. Template sample data will make your website look exactly the same way as our demo template. You will receive all the modules, text-blocks, media files installed.</p>
+								<p>If you are not ready to install sample data, please proceed to the step "Installing Drupal theme without sample data". You can also install it later. Please, check the chapter "Installing Drupal theme with sample data over the existing website".</p>
+								
+								<article id="inst_demo">
+									<h3>Installing Drupal theme with sample data</h3>
+									<p class="box-notification"><span>Sample data demo profile should be uploaded to a server BEFORE you install the Drupal engine!</span></p>
+									<p>In order to install your theme including sample data, follow the steps listed below:</p>
+									<ol>
+										<li>Upload <strong>sites/</strong> folder from your template package to the root folder of your Drupal installation. You can replace the existing files. The folder contains theme files, modules, libraries, media files, etc.</li>
+										<li>Upload <strong>sources/demo_profile/</strong> folder from the template package to <strong>profiles/</strong> folder of your Drupal installation. This folder contains a profile, that includes sample data.</li>
+										<li>Upload <strong>sources/install.inc</strong> file from the template package into <strong>includes/</strong> folder of the Drupal installation. You need to overwrite the existing files.</li>
+										<li>Upload <strong>sources/system.install</strong> file from the template package to the <strong>modules/system/</strong> folder of your Drupal installation. You need to overwrite the existing file.</li>
+									</ol>
+									<p class="box-info"><span>Replacement of these files will add a new option to the installation process so it will not affect your installation in any way.</span></p>
+									<ol start="5">
+										<li>In order to start the installation process, enter your website URL in a browser's address bar.</li>
+										<li>On the initial setup page you will be prompted to select the installation profile. Choose <strong>Demonstration site</strong> and click <strong>Save and Continue</strong>:</li> 
+									</ol>
+									<p><img src="img/inst-demo-01.png" alt="Select Demonstration site"></p>
+									<ol start="7">
+										<li>Follow the instructions on the screen to install Drupal engine. Fill in the fields with your database name, username, password and hostname of the earlier created database.</li>
+										<li>On the <strong>Choose snapshot</strong> step select the snapshot as it is shown on the image below and click the <strong>Restore</strong> button.</li>
+									</ol>
+									<p class="box-notification"><span>In order to make your site look exactly like our demo template it is important to install the snapshot.</span></p>
+									<p><img src="img/inst-demo-02.png" alt="Choose snapshot"></p>
+									<p class="box-info"><span>Snapshot is a copy of a database that contains sample data and also a file with info about modules used in this template. The snapshot is in MySQL database format.</span></p>
+									<ol start="9">
+										<li>Click the link <strong>Visit your new site</strong>.</li>
+									</ol>
+									<p><img src="img/inst-demo-02-1.png" alt="Click 'Visit your new site'"></p>
+									<p class="box-info"><span>To login as website administrator use the following details: username: admin; password: admin123. We recommend that you change your password immediately after installation for security reasons.</span></p>
+									<ol start="10">
+										<li>Drupal installation is almost completed. The last thing to do is to update the database tables. In your browser address bar type <strong>http://www.example.com/update.php</strong>, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>Follow the instructions on the screen.</li>
+										<li>After the update is done, follow one of the links: <strong>Front page</strong> or <strong>Administration pages</strong>.</li>
+									</ol>
+									<p>Feel free to check the following instructions:</p>
+									<ol class="square-list">
+										<li><a href="/help/how-to-install-drupal-template-using-demo-profile-possible-issues.html" target="_blank">How to install Drupal template using demo profile + possible issues <i class="icon-external-link"></i></a>
+									</ol>
+								</article>
+
+								<article id="inst_no_demo">
+									<h3>Installing Drupal theme without sample data</h3>
+									<p>Follow the instructions listed below in order to install the template without sample data:</p>
+									<ol>
+										<li>Upload the content of <strong>sites/all/themes/</strong> folder from the template package to <strong>sites/all/themes/</strong> folder of your Drupal installation on your server.</li>
+									</ol>
+									<p class="box-notification"><span>Please, note, that some of the theme elements are made using modules. On the current installation step the front-end layout and theme functionality may differ from the one you have seen on the live demo, because the modules are not turned on.</span></p>
+									<ol start="2">
+										<li>In order to install modules, upload <strong>sites/all/modules/</strong> folder and <strong>sites/all/libraries/</strong> folder from the template package to the <strong>sites/all/</strong> folder of your Drupal installation. You can skip this step if you do not want to use the default template modules. </li>
+										<li>Type your domain name in your browser’s address bar to start Drupal installation procedure.</li>
+										<li>Follow the instructions on the screen. Fill in the following fields: database name, username, password and host name.</li>
+									</ol>
+									<p><img src="img/inst-demo-01-1.png" alt="Fill DB data"></p>
+									<ol start="5">
+										<li>Register site administrator</li>
+										<li>Log in the back-end using administrator access details registered during the installation process.</li>
+										<li>From the top menu select <strong>Appearance</strong> or type <strong>http://www.example.com/?q=admin/appearance</strong> in the browser address bar, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>Locate your installed theme and click <strong>Enable and set default</strong>.</li>
+									</ol>
+									<p><img src="img/inst-no-demo-01.png" alt="Enable theme"></p>
+									<ol start="9">
+										<li>In case you have uploaded the modules folder on the second installation step, select <strong>Modules</strong> tab from the top menu or type <strong>http://www.example.com/?q=admin/modules</strong> in the browser address bar, where <strong>www.example.com</strong> is your website URL. Activate the modules. Modules configuration can be done up to your needs.</li>
+									</ol>
+									<p>Feel free to check the following instructions: </p>
+									<ol class="square-list">
+										<li><a href="/help/how-upload-and-install-drupal-server.html" target="_blank">Drupal 7.x. How to install the engine <i class="icon-external-link"></i></a>
+										<li><a href="/help/how-to-install-drupal-7-theme.html" target="_blank">Drupal 7.x. How to install Drupal theme <i class="icon-external-link"></i></a>
+									</ol>
+								</article>
+
+								<article id="inst_demo_exs_site">
+									<h3>Installing Drupal theme with sample data over the existing website</h3>
+									<p class="box-error"><span>Installing the theme sample content over the existing Drupal installation will erase all your website content and replace it with the sample one!</span></p>
+									<p class="box-notification"><span>We highly recommend that you <a href="/help/phpmyadmin-how-to-backup-a-database.html" target="_blank"> backup your database </a> before installing the theme using snapshot.</span></p>
+									<p>If you have a running Drupal website and still want to install the theme with sample data please follow the instructions listed below:</p>
+									<ol>
+										<li>Upload the content of <strong>sites/all/</strong> folder from your template package to <strong>sites/all/</strong> folder of your Drupal installation.</li>
+										<li>Upload the content of <strong>sites/default/</strong> folder from the template package to <strong>sites/default/</strong> folder of your Drupal installation.</li>
+									</ol>
+									<p class="box-error"><span>Be careful replacing the files! DO NOT replace the "settings.php" and "default.settings.php" files, or you will have to re-install the Drupal engine!</span></p>
+									<ol start="3">
+										<li>Upload <strong>sources/demo_profile/</strong> folder from the template package to <strong>profiles/</strong> folder of your Drupal installation. This folder contains the profile, that will let you install demo data.</li>
+										<li>Login to Drupal website as administrator.</li>
+										<li>In the admin panel go to <strong>Configuration -> File system</strong> or follow the link <strong>http://www.example.com/?q=admin/config/media/file-system</strong>, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>In the <strong>Private file system path</strong> field set the value <strong>sites/default/private/files</strong>.</li>
+										<li>In the admin panel open the <strong>Modules</strong> page or follow the link <strong>http://www.example.com/?q=admin/modules</strong>, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>Make sure, <strong>Demonstration site</strong> module is on.</li>
+										<li>In your admin panel go to <strong>Structure -> Snapshots </strong> page and navigate to <strong>Reset</strong> tab or follow the link <strong>http://www.example.com/?q=admin/structure/demo/reset</strong>, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>Select the snapshot <strong>theme###</strong>, where ### - your theme number.</li>
+									</ol>
+									<p><img src="img/inst-demo-exs-site-01.png" alt="Select snapshot"></p>
+									<ol start="11">
+										<li>Click the <strong>Reset</strong> button. Confirm the action.</li>
+										<li>Login to the site as administrator.</li>
+									</ol>
+									<p class="box-info"><span>In order to log in the back-end after the installation, use the following access details: username: admin; password: admin123. We recommend that you change your password immediately after installation for security reasons.</span></p>
+									<ol start="13">
+										<li>The last thing you need to do is to update database tables. In the browser address bar type <strong>http://www.example.com/update.php</strong>, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>Follow the instructions on the screen.</li>
+										<li>After the update is done, follow one of the links: <strong>Front page</strong> or <strong>Administration pages</strong>.</li>
+									</ol>
+									<p>Feel free to check the following instructions:</p>
+									<ol class="square-list">
+										<li><a href="/help/how-to-install-drupal-7-theme.html" target="_blank">Drupal 7.x. How to install Drupal theme <i class="icon-external-link"></i></a>
+										<li><a href="/help/how-to-install-drupal-7-theme-sample-data.html" target="_blank">Drupal 7.x. How to install Drupal theme sample data <i class="icon-external-link"></i></a>
+									</ol>
+								</article>
+
+								<article id="inst_no_demo_exs_site">
+									<h3>Installing Drupal theme without sample data over the existing website</h3>
+									<p>In order to install Drupal theme over the existing website without sample data, follow the instructions listed below:</p>
+									<ol>
+										<li>Upload the content of <strong>sites/all/themes/</strong> folder from the template package to <strong>sites/all/themes/</strong> folder of your Drupal installation.</li>
+									</ol>
+									<p class="box-notification"><span>Note, that some of the theme elements are made using modules. On the current installation step the front-end layout and theme functionality may differ from the one you have seen on the live demo, because the modules are not turned on.</span></p>
+									<ol start="2">
+										<li>In order to install the modules, upload the <strong>sites/all/modules/</strong> folder and <strong>sites/all/libraries/</strong> folder from your template package to <strong>sites/all/</strong> folder of your Drupal installation. Skip the step if you do not want to use the default template modules.</li>
+										<li>Login to the site as administrator.</li>
+										<li>In your admin panel navigate to <strong>Appearance</strong> page or type <strong>http://www.example.com/?q=admin/appearance</strong> in the browser address bar, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>Locate your installed theme and click <strong>Enable and set default</strong>.</li>
+									</ol>
+									<p><img src="img/inst-no-demo-01.png" alt="Enable theme"></p>
+									<ol start="6">
+										<li>In case you have uploaded the modules folder on the second installation step, select <strong>Modules</strong> tab from the top menu or type in the browser address bar <strong>http://www.example.com/?q=admin/modules</strong>, where <strong>www.example.com</strong> is your website URL. Activate the modules. Modules configuration should be done up to your needs.</li>
+									</ol>
+									<p>Feel free to check the following instructions:</p>
+									<ol class="square-list">
+										<li><a href="/help/how-to-install-drupal-7-theme.html" target="_blank">Drupal 7.x. How to install Drupal theme <i class="icon-external-link"></i></a>
+									</ol>
+								</article>
+							</section>
+							
+							<section class="block-templates" id="settings">
+								<h2><i class="icon-cogs"></i> Configuration </h2>
+								<p>Drupal based site contains a number of site settings together with its elements settings. In this part we will overview only the main settings types.</p>
+								
+								<article id="drupal_settings">
+									<h3>Drupal settings</h3>
+									<p>You can check the full list of settings by clicking the <strong>Configuration</strong> tab in the administration section, or type <strong>http://www.example.com/?q=admin/config</strong> in the browser address bar, where <strong>www.example.com</strong> is your website URL.</p>
+									<p>In order to change the default site settings, follow the steps listed below:</p>
+									<ol>
+										<li>Navigate to <strong>Configuration -> Site information</strong> page in the administration panel or type <strong>http://www.example.com/?q=admin/config/system/site-information</strong> in the browser address bar, where <strong>www.example.com</strong> is your website URL.</li>
+										<li> 
+											<p>Change the required parameters:</p>
+											<ul class="square-list">
+												<li>Sitename;</li>
+												<li>Site slogan;</li>
+												<li>Site email address;</li>
+												<li>The number of blog posts per Blog page (or main page, if there are any posts attached to the main page);</li>
+												<li>Website main page URL;</li>
+												<li>403 page's URL (access denied);</li>
+												<li>404 page's URL (page not found).</li>
+											</ul>
+										</li>
+									</ol>
+									<p><img src="img/drupal-settings-01.png" alt="Set site name"></p>
+									<ol start="3">
+										<li>After making necessary changes, click <strong>Save configuration</strong>.</li>
+									</ol>
+								</article>
+								
+								<article id="theme_settings">
+									<h3>Theme settings</h3>
+									<p>Every theme includes own list of settings.</p>
+									<p>In order to change theme settings, follow the steps listed below:</p>
+									<ol>
+										<li>In your website administration panel navigate to <strong>Appearance</strong> tab or type <strong>http://www.example.com/?q=admin/appearance</strong> in the browsers address bar, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>Click the <strong>Settings</strong> link under your theme name:</li>
+									</ol>
+									<p><img src="img/theme-settings-01.png" alt="Click theme settings"></p>
+									<ol start="3">
+										<li>
+											<p>On the <strong>General Settings</strong> tab you can set the following parameters:</p>
+											<ul class="square-list">
+												<li>show/hide logo, sitename, slogan, posts authors avatars, comments authors avatars, comment's author pending review, featured icon, main and secondary menu;</li>
+												<li>use the default theme logo or upload the custom one;</li>
+												<li>use the default theme favicon or upload the custom one;</li>
+												<li>stick the menu at the top of the browser window.</li>
+											</ul>
+										</li>
+									</ol>
+									<p><img src="img/theme-settings-02.png" alt="General settings"></p>
+									<ol start="4">
+										<li>
+											<p>On the <strong>Breadcrumb Settings</strong> tab you can set the following parameters:</p>
+											<ul class="square-list">
+												<li>show/hide "breadcrumbs";</li>
+												<li>show/hide "breadcrumbs", if it only contains link to the main page;</li>
+												<li>set the divider between "breadcrumbs" links.</li>
+											</ul>
+										</li>
+									</ol>
+									<p><img src="img/theme-settings-03.png" alt="Breadcrumb Settings"></p>
+									<ol start="5">
+										<li>On the <strong>Blog Settings</strong> tab you can set a blog page title. Leave the field empty for the blog title to coincide with the naming of the corresponding menu link.</li>
+									</ol>
+									<p><img src="img/theme-settings-04.png" alt="Blog Settings"></p>
+									<ol start="6">
+										<li>On the <strong>Custom CSS</strong> tab you can set custom styles for the theme installed.</li>
+									</ol>
+									<p><img src="img/theme-settings-05.png" alt="Custom CSS"></p>
+									<p class="box-notification"><span>This option refers to the purchased theme. You cannot set any styles for the other themes, such as Seven etc.</span></p>
+								</article>
+								
+								<article id="block_settings">
+									<h3>Block settings</h3>
+									<p>Follow the instructions listed below in order to configure your blocks:</p>
+									<ol>
+										<li> Login to your site administrator area.</li>
+										<li> Open the page  <strong>Structure -> Blocks</strong> in your Drupal admin panel or type the following address in the browser address bar <strong>http://www.example.com/?q=admin/structure/block</strong>, where <strong>www.example.com</strong> your website URL.</li>
+										<li> You can move blocks to different regions by using drag-and-drop method on this page.</li>
+									</ol>
+									<p><img src="img/block-settings-01.png" alt="Drag&amp;Drop blocks"></p>
+									<ol start="4">
+										<li>You can move blocks using the drop-down menu in the <strong>Region</strong> column:</li>
+									</ol>
+									<p><img src="img/block-settings-02.png" alt="Select block region"></p>
+									<ol start="5">
+										<li>It is possible to configure single blocks one-by-one, by choosing the item <strong>configure</strong> in the <strong>Operations</strong> column:</li>
+									</ol>
+									<p><img src="img/block-settings-03.png" alt="Configure block"></p>
+									<ol start="6">
+										<li>
+											<p> The following parameters can be set at the block settings page:</p>
+											<ul class="square-list">
+												<li> block header;</li>
+												<li> the block's custom CSS-class;</li>
+												<li> block's region for each separate theme;</li>
+												<li> view settings (for different pages, content types, user roles or separate users);</li>
+											</ul>
+										</li>
+									</ol>
+									<p><img src="img/block-settings-04.png" alt="Block settings page"></p>
+									<p class="box-info"><span>Some blocks may include additional settings.</span></p>
+									<ol start="7">
+										<li>On the other hand you can open the block's settings page directly from your site pages. In order to do this please roll-over the needed block with your mouse cursor, press on the gear wheel icon at the top right corner of the block and choose the option <strong>Configure block</strong>. This option will be available only for the logged in user with the administrator rights:</li>
+									</ol>
+									<p><img src="img/block-settings-05.png" alt="Click cog to configure block"></p>
+								</article>
+								
+								<article id="modules_settings">
+									<h3>Module settings</h3>
+									<p>Our templates include the following modules:</p>
+									<ul class="square-list">
+										<li><strong>AddThis</strong> - adds "Share" button for the social networks;</li>
+										<li><strong>Administration menu</strong> - is the convenient alternative for the top administrative menu;</li>
+										<li><strong>Block Class</strong> - allows to add users class on the block;</li>
+										<li><strong>Cctags</strong> - allows to create a tagcloud;</li>
+										<li><strong>Colorbox</strong> - allows to add lightbox feature for the images;</li>
+										<li><strong>Demonstration site</strong> - allows to create a databases backup;</li>
+										<li><strong>Flex Slider</strong> - adds a slider;</li>
+										<li><strong>Media, Media: Vimeo, Media: YouTube</strong> - allows to add not only images, but also video and audio files into content type;</li>
+										<li><strong>Menu block</strong> - allows to duplicate menu;</li>
+										<li><strong>Module Filter</strong> - allows to add modules filtering in the administration panel;</li>
+										<li><strong>Olark Chat</strong> - allows to add a live chat feature;</li>
+										<li><strong>Panels</strong> - allows to create pages;</li>
+										<li><strong>Rate, Voting API</strong> - allows to add ratings on the content type page;</li>
+										<li><strong>Retina Images</strong> - allows to crop the images for retina-screens with 2x size;</li>
+										<li><strong>Simple Google Maps</strong> - allows to add Google-maps based on the address;</li>
+										<li><strong>Superfish</strong> - adds drop-down menus;</li>
+										<li><strong>TM Follow</strong> - creates two blocks with the links, that link the website and its users with the social networks;</li>
+										<li><strong>Views, Semantic Views, Views Isotope, Views Slideshow</strong> - allows you to create a sampling of content types, comments, users, and to represent them in the form of blocks and pages;</li>
+										<li><strong>Wysiwyg</strong> - adds a visual editor;</li>
+										<li>and others.</li>
+									</ul>
+									<p>Each module contains its own settings. In order to set up the module, follow the steps listed below:</p>
+									<ol>
+										<li>Login to your site administrator area.</li>
+										<li>Navigate to <strong>Modules</strong> tab or type <strong>http://www.example.com/?q=admin/modules</strong> in the browser address bar, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>Locate the module. You can use module filters to find the right one.</li>
+										<li>Click <strong>Configure</strong> link next to the module.</li>
+									</ol>
+									<p><img src="img/modules-settings-01.png" alt="Click configure link"></p>
+									<ol start="5">
+										<li>Make necessary changes and save the settings.</li>
+									</ol>
+									<p>Feel free to check the following instructions:</p>
+									<ul class="square-list">
+										<li><a href="/help/drupal-7-how-to-accessedit-blocks-views-and-panels-from-front-end.html" target="_blank">Drupal 7. How to access and edit blocks, views and panels from front-end <i class="icon-external-link"></i></a></li>
+										<li><a href="https://drupal.org/documentation/modules/contextual" target="_blank">Working with contextual links <i class="icon-external-link"></i></a></li>
+										<li><a href="https://drupal.org/documentation/modules/block" target="_blank">Working with blocks <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+							</section>
+							
+							<section class="block-templates" id="content_manage">
+								<h2><i class="icon-edit"></i> Content management</h2>
+								<p>In this chapter we will overview the way of creating content, also find out how to manage different types of content in case you have installed the sample data.</p>
+								
+								<article id="menu_manage">
+									<h3>Menu management</h3>
+									<p>The following menu types can be used in the template:</p>
+									<ul class="square-list">
+										<li><strong>Main menu</strong> contains the links to the main website pages;</li>
+										<li><strong>User menu</strong> contains the links, connected to the users profile, such as "Register", "Login", etc.;</li>
+										<li><strong>Footer menu </strong> duplicates main menu.</li>
+									</ul>
+									<p>Let's overview each of them in details.</p>
+
+									<h4>Main menu</h4>
+									<p><strong>In order to edit main menu items, follow the steps listed below:</strong></p>
+									<ol>
+										<li>In the admin panel navigate to <strong>Structure -> Menus</strong> or type <strong>http://www.example.com/?q=admin/structure/menu</strong> in the browser address bar, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>Click the <strong>List links</strong> button next to the menu item.</li>
+									</ol>
+									<p><img src="img/menu-manage-01.png" alt="Click 'List links'"></p>
+									<ol start="3">
+										<li>To add an item, click <strong>Add link</strong> at the top of the page.</li>
+									</ol>
+									<p><img src="img/menu-manage-02.png" alt="Click 'Add link'"></p>
+									<ol start="4">
+										<li>To edit the item, click <strong>Edit</strong>.</li>
+									</ol>
+									<p><img src="img/menu-manage-03.png" alt="Click 'Edit'"></p>
+									<ol start="5">
+										<li>To remove the item, click <strong>Delete</strong>.</li>
+									</ol>
+									<p><img src="img/menu-manage-04.png" alt="Click 'delete'"></p>
+									<ol start="6">
+										<li>To change the items order, use the drag-and-drop method to place the item, then click <strong>Save configuration</strong>.</li>
+									</ol>
+									<p><img src="img/menu-manage-05.png" alt="Drag&amp;Drop link"></p>
+									
+									<p><strong>To set up drop-down menu, follow the steps listed below:</strong></p>
+									<ol>
+										<li>In the admin panel navigate to <strong>Structure -> Blocks</strong> or type <strong>http://www.example.com/?q=admin/structure/block</strong> in the browser address bar, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>Locate the block with the menu's name.</li>
+										<li>Click <strong>Configure</strong> link next to this block.</li>
+										<li>Make changes in <strong>Superfish settings</strong> section.</li>
+									</ol>
+									<p><img src="img/menu-manage-06.png" alt="Fill Superfish settings"></p>
+									<ol start="5">
+										<li>Click <strong>Save block</strong> button.</li>
+									</ol>
+									<p><strong>In order to change the menu location, follow the steps listed below:</strong></p>
+									<ol>
+										<li>In the admin panel navigate to <strong>Structure -> Blocks</strong> or type <strong>http://www.example.com/?q=admin/structure/block</strong> in the browsers address bar, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>Locate the block with the menu's name.</li>
+										<li>Move the menu block to the needed region, the same way as the regular block.</li>
+										<li>Click <strong>Save blocks</strong> button.</li>
+									</ol>
+
+									<h4>User's menu</h4>
+									<p>User's menu is a standard Drupal menu. It does not include any drop-down menus. To edit the menu or change its location, you can use the same instructions, that are used for the main menu.</p>
+
+									<h4>Footer menu</h4>
+									<p>Footer menu duplicates main menu. To set up this menu, follow the steps listed below:</p>
+									<ol>
+										<li>In the admin panel navigate to <strong>Structure -> Blocks</strong> or type <strong>http://www.example.com/?q=admin/structure/block</strong> in the browser address bar, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>Locate the block with the menu's name.</li>
+										<li>Click <strong>Configure</strong> button next to the block.</li>
+										<li>
+											<p>On the opening page, besides the standard block fields, fill in the following fields:</p>
+											<ul class="square-list">
+												<li><strong>Menu</strong> - the name of the menu, that needs to be duplicated;</li>
+												<li><strong>Starting level</strong> - block visibility on a page. Blocks, that start with the first level, will always be visible. Blocks, starting from the second level or higher, will be visible only on the pages, where these menu items are active.</li>
+												<li><strong>Maximum depth</strong> - the number of the visible menu levels. Set 1, to disable all the sub-menus.</li>
+											</ul>
+										</li>
+									</ol>
+									<p><img src="img/menu-manage-07.png" alt="Fill block options"></p>
+									<ol start="5">
+										<li>Click <strong>Save block</strong> button.</li>
+									</ol>
+									<p>Feel free to check the following instructions:</p>
+									<ul class="square-list">
+										<li><a target="_blank" href="/help/drupal-7-how-to-install-drop-down-menu-module.html"> Drupal 7. How to install drop-down menu module (Superfish) <i class="icon-external-link"></i></a></li>
+										<li><a href="/help/drupal-7-how-to-add-a-new-page-and-a-new-menu-button.html" target="_blank"> Drupal 7. How to add a new page and a new menu button <i class="icon-external-link"></i></a></li>
+										<li><a href="https://drupal.org/node/754652" target="_blank">Superfish module documentation <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+								
+								<article id="node_manage">
+									<h3>Content type management</h3>
+									<p>The template includes the following main content types:</p>
+									<ul class="square-list">
+										<li><strong>Banner</strong> represents a company name, logo and additional information. Can be used in "Our partners", "Our clients" blocks, and others;</li>
+										<li><strong>Employee</strong> consists of an employees  photo and some information. Can be used in "Our team", "Our staff" blocks, and others;</li>
+										<li><strong>FAQ </strong> represents the content type in a 'question-answer' format. Is it used on a "Frequently asked questions" page;</li>
+										<li><strong>Map </strong> Consists of the address field and short information. Can be used as the Google map on the Contacts page. In order to change the map on the Contacts page, edit the "Our location" content type;</li>
+										<li><strong>Portfolio item</strong> consists of the header, an image and short description. Can be used on "Portfolio", "Gallery", "Services" pages;</li>
+										<li><strong>Service</strong> consists of the header, an image and short description. Can be used in "Services" blocks, and others;</li>
+										<li><strong>Slide</strong> consists of the header, an image and short description. It is used on the main page in slideshow;</li>
+										<li><strong>Testimonial</strong> - contains the short feedback and the information about its author. Can be used in "Testimonials", "What people say about us" blocks.;</li>
+										<li>and others.</li>
+									</ul>
+									<p class="box-notification"><span>Any changes made in these content types (adding, editing, deleting) instantly appear on the blocks or pages, where they are used.</span></p>
+									<p>Some of the modules contain own content types. For example, Panels module contains <em>Panel</em> content type.</p>
+									<p>You can also create own content types.</p>
+									<p>In order to edit, remove or manager the content type, follow the steps listed below:</p>
+									<ol>
+										<li>In order to check the complete list of the content types, navigate to <strong>Content</strong> tab in your admin panel, or type <strong>http://www.example.com/?q=admin/content</strong> in the browser address bar, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>In order to create a new node of a content type, click the <strong>Add content</strong> link.</li>
+									</ol>
+									<p><img src="img/node-manage-01.png" alt="Click 'Add content'"></p>
+									<ol start="3">
+										<li>On the opening page select a content type.</li>
+									</ol>
+									<p><img src="img/node-manage-02.png" alt="Chose content type"></p>
+									<ol start="4">
+										<li>Fill in the required fields and click <strong>Save</strong> button.</li>
+										<li>In order to edit the existing node of a content type, on the <strong>Content</strong> page in the <strong>Show only items where</strong> field select the content type and click <strong>Filter</strong> button.</li>
+									</ol>
+									<p><img src="img/node-manage-03.png" alt="Filter content"></p>
+									<ol start="6">
+										<li>In order to edit the node of a content type, click the <strong>Edit</strong> link next to its name.</li>
+									</ol>
+									<p><img src="img/node-manage-04.png" alt="Click 'Edit'"></p>
+									<ol start="7">
+										<li>In order to delete some node of a content type, click the <strong>Delete</strong> link next to its name.</li>
+									</ol>
+									<p><img src="img/node-manage-05.png" alt="Click 'Delete'"></p>
+									<p>Feel free to check the following instructions:</p>
+									<ul class="square-list">
+										<li><a target="_blank" href="/help/drupal-content-types-overview.html"> Drupal. Content types overview <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+								
+								<article id="page_manage">
+									<h3>Page management</h3>
+									<p>All the templates pages are made with the help of <strong>Panels</strong> module.</p>
+									<p>To manage the pages, follow the instructions below:</p>
+									<ol>
+										<li>In order to check all the existing pages, navigate to <strong>Structure -> Pages</strong> in your admin panel, or type <strong>http://www.example.com/?q=admin/structure/pages</strong> in the browser address bar, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>In order to create a new page, at the top of the opening page click <strong>Add custom page</strong>.</li>
+									</ol>
+									<p><img src="img/page-manage-01.png" alt="Click 'Add custom page'"></p>
+									<ol start="3">
+										<li>Follow the instructions on the screen, fill in all the required fields, save the changes.</li>
+										<li>In order to edit the existing page, click the <strong>Edit</strong> link next to its title.</li>
+									</ol>
+									<p><img src="img/page-manage-02.png" alt="Click 'Edit'"></p>
+									<ol start="5">
+										<li>In order to remove the page, click <strong>Delete</strong> at the top of the page in the editing mode.</li>
+									</ol>
+									<p><img src="img/page-manage-03.png" alt="Click 'Delete'"></p>
+									<p>Feel free to check the following instructions:</p>
+									<ul class="square-list">
+										<li><a href="/help/drupal-7-how-to-add-a-new-page-and-a-new-menu-button.html" target="_blank">Drupal 7. How to add a new page and a new menu button <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+								
+								<article id="views_manage">
+									<h3>View management</h3>
+									<p>Most of the templates content is made with the help of views, such as:</p>
+									<ul class="square-list">
+										<li><strong>Archive</strong> takes content type "Blog entry", arranges them by months and displays them in a block or page mode.</li>
+										<li><strong>Banners</strong> takes content type "Banner" and displays them in a block mode.</li>
+										<li><strong>Categories</strong> takes taxonomy terms from the <em>"Blog categories"</em>  dictionary and outputs them in a block mode.</li>
+										<li><strong>FAQs</strong> takes content type FAQs and outputs them in a page mode.</li>
+										<li><strong>Portfolio</strong> takes content type "Portfolio Item" and outputs them in a Portfolio (Gallery, Services) page mode using two, three or four columns.</li>
+										<li><strong>Portfolio filter</strong> creates a portfolio filter, can be used in "Portfolio" view.</li>
+										<li><strong>Recent comments</strong> takes comments and outputs them in a block or page mode.</li>
+										<li><strong>Recent posts</strong> takes content type "Blog entry" and outputs them in a block mode.</li>
+										<li><strong>Slider</strong>  takes content type "Slide" and outputs them in a block slider mode.</li>
+										<li><strong>Team </strong> takes content type "Employee" and outputs them in a block mode.</li>
+										<li><strong>Testimonials</strong> takes content type "Testimonial" and outputs them in a block or page mode.</li>
+										<li>and others.</li>
+									</ul>
+									<p>To manage the views follow the instructions below:</p>
+									<ol>
+										<li>To check all the existing views, navigate to <strong>Structure -> Views</strong> in the admin panel, or type <strong>http://www.example.com/?q=admin/structure/views</strong> in the browser address bar, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>To create a new view, click the  <strong>Add new view</strong> link at the top of the opening page.</li>
+									</ol>
+									<p><img src="img/views-manage-01.png" alt="Click 'Add new view'"></p>
+									<ol start="3">
+										<li>On the opening page fill in the views name, content type, ordering type, how to display.</li>
+										<li>In order to set additional parameters, click the <strong>Continue &amp; edit</strong> button. To complete, click the <strong>Save &amp; exit</strong> button.</li>
+									</ol>
+									<p><img src="img/views-manage-02.png" alt="Fill view data"></p>
+									<ol start="5">
+										<li>To edit the existing view, select <strong>Edit</strong> in the drop-down list under the exact view.</li>
+									</ol>
+									<p><img src="img/views-manage-03.png" alt="Click 'Edit'"></p>
+									<p class="box-notification"><span>Do not make changes to the view, in case you are not sure what you are doing.</span></p>
+									<ol start="6">
+										<li>To remove the existing view, select <strong>Delete</strong> in the drop-down list under the exact view.</li>
+									</ol>
+									<p><img src="img/views-manage-04.png" alt="Click 'Delete'"></p>
+									<ol start="7">
+										<li>Views that appear in a block mode can be managed same way as the regular blocks. On the other hand you can open the view block's settings page directly from your site pages. In order to do this, roll-over the needed block with your mouse cursor, press on the gear wheel icon at the top right corner of the block and choose the option <strong>Configure block</strong>:</li>
+									</ol>
+									<p><img src="img/views-manage-05.png" alt="Click 'Edit view'"></p>
+									<ol start="8">
+										<li>Views that are displayed in pages mode can be set up the same way. Roll-over the needed page part with your mouse cursor, press on the gear wheel icon at the top right corner of the block and choose the option  <strong>Edit view</strong>:</li>
+									</ol>
+									<p><img src="img/views-manage-06.png" alt="Click 'Edit view'"></p>
+									<p>Feel free to check the following instructions:</p>
+									<ul class="square-list">
+										<li><a target="_blank" href="/help/drupal-7-how-to-use-views-module-and-editconfigure-it.html"> Drupal 7. How to use Views module and edit/configure it <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+								
+								<article id="media_manage">
+									<h3>Media management</h3>
+									<p>You can use the <strong>Media</strong> module in order to upload images and videos.</p>
+									<p>In order to manage the media, follow the instructions below:</p>
+									<ol>
+										<li>In order to check the full list of media files, navigate to <strong>Content</strong> tab in your admin panel and go to <strong>Media  </strong> or type <strong>http://www.example.com/?q=admin/content/media</strong> in the browser address bar, where <strong>www.example.com</strong> is your website URL.</li>
+										<li>In order to remove existing media files, check them, in the <strong>Operations</strong> filed choose <strong>Delete</strong> and click <strong>Submit</strong>.</li>
+									</ol>
+									<p><img src="img/media-manage-01.png" alt="Delete media files"></p>
+									<ol start="3">
+										<li>In order to add a media file into the content type, click the <strong>Select media</strong> button in the editing mode of the content type.</li>
+									</ol>
+									<p><img src="img/media-manage-02.png" alt="Click 'Select media'"></p>
+									<ol start="4">
+										<li>
+											<p>In the appeared window:</p>
+											<ul class="square-list">
+												<li>in the <strong>Upload</strong> tab you can upload the image from your computer;</li>
+												<li>in the <strong>Web</strong> tab you can set the link to an external image or a video from YouTube and Vimeo;</li>
+												<li>in the <strong>Library</strong> tab you can select one of the images or videos, previously uploaded to your site.</li>
+											</ul>
+											After you select the media file, click <strong>Submit</strong>.
+										</li>
+									</ol>
+									<p><img src="img/media-manage-03.png" alt="Chose media"></p>
+									<p class="box-notification"><span>Please, note, that you can add a video only to the <em>Blog entry</em> content type node.</span></p>
+									<p>Feel free to check the following instructions:</p>
+									<ul class="square-list">
+										<li><a href="/help/how-customize-primary-links.html" target="_blank">Drupal 7.x. How to customize "Primary links" <i class="icon-external-link"></i></a></li>
+										<li><a href="https://drupal.org/node/754652" target="_blank">Superfish module documentation <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+							</section>
+							
+							<section class="block-templates" id="chart">
+								<h2><i class="icon-comments-alt"></i> Olark live chart</h2>
+								<p>In order to add the Olark-chat feature, same as on the live demo page, follow the steps listed below:</p>
+								<ol>
+									<li>Register on <a href="https://www.olark.com/install" target="_blank"> the official Olark website</a>.</li>
+									<li>Enter required data.</li>
+									<li>Copy the code you receive.</li>
+								</ol>
+								
+								<div class="flexslider clearfix img-polaroid">
+									<ul class="slides">
+										<li>
+											<img src="img/chart-01.png" alt="Register on olark.com">
+											<div class="flex-caption">
+												<p>1. Register on the official Olark website</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/chart-02.png" alt="Enter data">
+											<div class="flex-caption">
+												<p>Enter all the information required.</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/chart-03.png" alt="Copy code">
+											<div class="flex-caption">
+												<p>Copy the code you receive.</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+	
+								<ol start="4">
+									<li>Navigate to <strong>Configuration</strong> page in your admin panel, in the <strong>Web services</strong> tab select <strong>Olark settings</strong>. You can also get to this page following the link <strong>http://www.example.com/?q=admin/config/services/olark</strong>, where <strong>www.example.com</strong> is your website URL.</li>
+									<li>Paste the code into <strong>Olark code</strong> field.</li>
+								</ol>
+								<p><img src="img/chart-04.png" alt="Paste code"></p>
+								<ol start="6">
+									<li>Click <strong>Save configuration</strong>.</li>
+									<li>In order to configure the chat, login to the Olark website, using your account access details.</li>
+								</ol>
+								<p>Feel free to check the following instructions:</p>
+								<ul class="square-list">
+									<li><a href="http://www.olark.com/customer/portal/articles/337453-getting-started-guide" target="_blank">Getting started with Olark <i class="icon-external-link"></i></a></li>
+									<li><a href="https://www.olark.com/download/handbook-en-US.pdf?download" target="_blank">Olark manual <i class="icon-external-link"></i></a></li>
+									<li><a href="https://drupal.org/node/1874984" target="_blank">"Olark Chat" documentation for Drupal engine <i class="icon-external-link"></i></a></li>
+								</ul>
+							</section>
+
+							<section class="block-templates" id="conclusion">
+								<h2><i class="icon-link"></i> Useful links</h2>
+								<ul class="square-list">
+									<li><a href="/help/cms-blog-templates/drupal/drupal-tutorials/" target="_blank">Drupal tutorials <i class="icon-external-link"></i></a></li>
+									<li><a href="https://drupal.org/documentation" target="_blank">Drupal Documentation <i class="icon-external-link"></i></a></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer
+	================================================== -->
+	<footer>
+		<div class="container">	
+			<div class="span12">
+				<span>Drupal documentation</span><br>
+				&copy; <span id="date"></span> <span id="copyright">Template Monster</span>
+			</div>
+		</div>
+	</footer>
+	<div id="back-top">
+		<a href="#"><i class="icon-double-angle-up"></i></a>
+	</div>
+
+	<script>
+		var _gaq = _gaq || []; 
+		_gaq.push(['_setAccount', 'UA-2787305-5']); 
+		_gaq.push(['_trackPageview']); 
+
+		(function() { 
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; 
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+		})();
+	</script>
+</body>
+</html>

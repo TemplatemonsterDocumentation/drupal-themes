@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Документация Drupal</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="css/responsive.css" media="screen">
+	<link rel="stylesheet" href="css/style.css" media="screen">
+	<link rel="stylesheet" href="css/prettify.css" media="screen">
+	<link rel="stylesheet" href="css/flexslider.css" media="screen">
+	<link rel="canonical" href="//www.templatemonster.com/help/quick-start-guide/prestashop-themes/master/index_en.html">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/prettify.js"></script>
+	<script src="js/jquery-migrate-1.1.0.js"></script>
+	<script src="js/bootstrap-affix.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/script.js"></script>
+
+	<!--[if lt IE 8]>
+		<div style='text-align:center'>
+			<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode">
+				<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg"border="0"alt=""/>
+			</a>
+		</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Header
+	================================================== -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<article class="span4">
+					<a class="brand" href="/help/ru/" target="_blank"></a>
+				</article>
+				<article class="span6">
+					<h1>
+						<img alt="" src="img/drupal-logo.png">&nbsp;Drupal документация
+					</h1>
+				</article>
+				<article class="span2">
+					<div id="languages" class="select-menu pull-right">
+						<div id="lang_icon" class="select-menu_icon">
+							<b>Ru</b><i class="icon-angle-down"></i>
+						</div>
+						<ul id="lang_list" class="select-menu_list">
+							<li><a href="index_en.html"><span>English </span><img src="img/flags/gb.png" height="14" width="22" alt="en"></a></li>
+							<li class="active"><a href="index_ru.html"><span>Русский </span><img src="img/flags/ru.png" height="14" width="22" alt="ru"></a></li>
+						</ul>
+					</div>
+					<div id="versions" class="select-menu pull-right">
+						<div class="select-menu_icon">
+							<b>v1-0</b><i class="icon-angle-down"></i>
+						</div>
+						<ul class="select-menu_list">
+							<li class="active"><a href="/help/quick-start-guide/drupal-themes/v1-0/index_en.html"><span>v1-0</span></a></li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</div>
+	</header>
+	
+	<!-- Content
+	================================================== -->
+	<div id="content"> 
+		<div class="bg-content-top">
+			<div class="container">
+				<div class="row">
+					<!-- Docs nav
+					================================================== -->
+					<div class="span3"> 
+						<div id="nav_container">
+							<a href="javascript:;" id="affect_all">
+								<span class="expand">
+									<i class="icon-angle-down"></i>
+								</span>
+								<span class="close">
+									<i class="icon-angle-up"></i>
+								</span>
+							</a>
+							<div class="clearfix"></div>
+							<ul class="nav nav-list bs-docs-sidenav" id="nav">
+								<li class="nav-item item1">
+									<dl class="slide-down">
+										<dt>
+											<a href="#preparations" class="icon-check">Подготовка</a>
+											<i class="icon-sample"></i>
+										</dt>
+										<dd>
+											<ul class="list">
+												<li><a href="#requirements">Минимальные требования</a></li>
+												<li><a href="#downloading">Скачивание Drupal</a></li>
+												<li><a href="#extracting_files">Извлечение файлов</a></li>
+												<li><a href="#upl_files">Загрузка Drupal на сервер</a></li>
+												<li><a href="#db_creating">Создание базы данных</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li class="nav-item item2">
+									<dl class="slide-down">
+										<dt>
+											<a href="#theme_installation" class="icon-dropbox">Установка Drupal и темы</a>
+											<i class="icon-sample"></i>
+										</dt>
+										<dd>
+											<ul class="list">
+												<li><a href="#inst_demo">Установка темы с демонстрационными данными</a></li>
+												<li><a href="#inst_no_demo">Установка темы без демонстрационных данных</a></li>
+												<li><a href="#inst_demo_exs_site">Установка темы с демонстрационными данными на существующий сайт</a></li>
+												<li><a href="#inst_no_demo_exs_site">Установка темы без демонстрационных данных на существующий сайт</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li class="nav-item item3">
+									<dl class="slide-down">
+										<dt>
+											<a href="#settings" class="icon-cogs">Настройки</a>
+											<i class="icon-sample"></i>
+										</dt>
+										<dd>
+											<ul class="list">
+												<li><a href="#drupal_settings">Настройки сайта</a></li>
+												<li><a href="#theme_settings">Настройки темы</a></li>
+												<li><a href="#block_settings">Настройки блоков</a></li>
+												<li><a href="#modules_settings">Настройки модулей</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li class="nav-item item3">
+									<dl class="slide-down">
+										<dt>
+											<a href="#content_manage" class="icon-edit">Управление содержимым</a>
+											<i class="icon-sample"></i>
+										</dt>
+										<dd>
+											<ul class="list">
+												<li><a href="#menu_manage">Управление меню</a></li>
+												<li><a href="#node_manage">Управление материалами</a></li>
+												<li><a href="#page_manage">Управление страницами</a></li>
+												<li><a href="#views_manage">Управление представлениями (Views)</a></li>
+												<li><a href="#media_manage">Управление медиа-содержимым</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li class="nav-item item3">
+									<dl class="slide-down">
+										<dt>
+											<a href="#chart" class=" icon-comments-alt">Olark чат</a>
+											<i class="icon-sample"></i>
+										</dt>
+										<dd></dd>
+									</dl>
+								</li>
+								<li class="nav-item item3">
+									<dl class="slide-down">
+										<dt>
+											<a href="#conclusion" class="icon-link">Полезные ссылки</a>
+										</dt>
+										<dd></dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- box-content
+					================================================== -->
+					<div class="span9">
+						<div class="box-content">
+							<!-- block-started
+							================================================== -->
+							<section class="block-templates" id="preparations">
+								<h2><i class="icon-check"></i> Подготовка</h2>
+
+								<article id="requirements">
+									<h3>Минимальные требования</h3>
+									<p>Для установки и запуска Drupal ваш хостинг-сервер должен соответствовать минимальным требованиям этого движка. Большинство хостинг-компаний отвечают этим требованиям. Однако, могут быть исключения, поэтому вы должны проверить следующие требования.</p>
+
+									<h4>Дисковое пространство</h4>
+									<p>Минимальная установка Drupal требует 15 Мб свободного дискового пространства. 60 Мб требуется для сайта с большим количеством установленных тем и модулей. Имейте в виду, что вам понадобиться гораздо больше пространства для загружаемых пользователями файлов, медиа, резервного копирования и других файлов.</p>
+									<h4>Web-сервер</h4>
+									Apache, Nginx или Microsoft IIS.<br>
+									<a href="https://drupal.org/requirements/webserver" target="_blank">Подробнее о требованиях к серверу</a>
+
+									<h4>База данных</h4>
+									<p>MySQL 5.0.15 или выше с PDO, PostgreSQL 8.3 или выше с PDO, SQLite 3.3.7 или выше.</p>
+									<p class="box-error"><span>При установке следует учитывать, что не все модули Drupal поддерживают базы данных PostgreSQL и SQLite, а так же то, что демонстрационные данные и настройки шаблона хранятся в формате MySQL. Поэтому мы рекомендуем вам использовать только базу данных MySQL.</span></p>
+
+									<h4>PHP</h4>
+									PHP 5.2.5 или выше (5.3 рекомендуется).<br>
+									<a href="https://drupal.org/requirements/php" target="_blank">Подробнее о требованиях PHP</a>
+								</article>
+								
+								<article id="downloading">
+									<h3>Скачивание движка Drupal</h3>
+									<p>Пропустите данный шаг, если у вас уже есть скаченный/установленный движок Drupal.</p>
+									<p>Первым шагом развертывания сайта на базе Drupal является загрузка движка Drupal с официального сайта <a href="https://drupal.org/download" target="_blank">http://drupal.org/</a>.</p>
+									<p><img src="img/downloading-01.png" alt="Downloading Drupal Engine page"></p>
+									<p>На открывшейся странице вы можете скачать zip- или tar.gz-архив с файлами ядра.</p>
+									<p>Для того, чтобы скачать последнюю версию Drupal, нажмите кнопку <strong>Download Drupal X.XX (Скачать Drupal X.XX)</strong>, где X.XX - номер последней версии Drupal.</p>
+									<p>В случае, если вам необходима более ранняя версия Drupal, перейдите по ссылке <strong>Other Releases (Другие версии)</strong>:</p>
+									<p><img src="img/downloading-03.png" alt="Downloading Drupal Engine other releases"></p>
+									<p>На открывшейся странице в поле <strong>API Version (Версия API)</strong> выберите нужную ветку версий Drupal и нажмите кнопку <strong>Apply (Применить)</strong>:</p>
+									<p><img src="img/downloading-04.png" alt="Downloading Drupal Engine other releases. Versions"></p>
+									<p>Ниже появится полный список версий в данной ветке, и вы сможете скачать нужную вам версию.</p>
+									<p class="box-notification"><span>Проверьте требования шаблона относительно требуемой версии Drupal и убедитесь, что вы скачиваете нужную версию.</span></p>
+								</article>
+								
+								<article id="extracting_files">
+									<h3>Извлечение файлов</h3>
+									<p>После загрузки Drupal вам потребуется извлечь файлы и папки из архива.</p>
+									<p>Вы можете сделать это с помощью программ <strong>WinZip(PC)</strong>, <strong>StuffitExpander(MAC)</strong> и т.п.</p>
+									<p>Посмотрите следующие инструкции по извлечению файлов из архивов <a href="/help/ru/extract-archived-files-windows-os.html" target="_blank">WinZip (PC)</a> и <a href="/help/ru/extract-archived-files-mac-os.html" target="_blank">StuffitExpander (MAC)</a>.</p>
+									<div class="box-info"><span>Внимание! Если в панели управления вашим хостингом доступна функция <strong>"Распаковать"</strong> файлы, вы можете загрузить на сервер сам .zip архив и распаковать его там. </span></div>
+								</article>
+								
+								<article id="upl_files">
+									<h3>Загрузка Drupal на сервер</h3>
+									<p>В случае, если вы распаковали файлы локально на вашем компьютере, вам потребуется загрузить их на хостинг-сервер.</p>
+									<p>Drupal должен быть загружен в корневую папку вашего хостинг-сервера. Как правило, она называется <strong>WWW</strong> или <strong>public_html</strong>. Если вы не уверены, обратитесь к вашему хостинг-провайдеру за подробной информацией.</p>
+									<p>Файлы могут быть загружены на сервер с помощью файловых менеджеров, таких как FileZilla, TotalCommander т.п. Существует ряд дополнений для браузеров (например, FireFTP для Mozilla Firefox). Также некоторые хостинг-провайдеры предоставляют такую услугу, как файловый менеджер. Проверьте свою панель управления хостингом или обратитесь за подробной информацией к своему хостинг-провайдеру.</p>
+									<p>Вы можете посмотреть видео-инструкцию <a href="/help/ru/how-upload-files-server-2.html" target="_blank">Как загрузить файлы на сервер</a> или <a href="/help/ru/how-to-upload-files-to-a-server-using-cpanel-webhost-manager-whm.html" target="_blank">Как загрузить файлы с помощью cPanel (WebHost менеджер, WHM)</a>.</p>
+								</article>
+								
+								<article id="db_creating">
+									<h3>Создание базы данных</h3>
+									<p>Как уже говорилось выше, для установки Drupal вам понадобится база данных MySQL. База данных может быть создана с помощью панели управления хостингом.</p>
+									<p>Вы можете связаться со своим хостинг-провайдером для получения помощи в создании базы данных на вашем хостинге.</p>
+									<p>В процессе создания базы данных вы получите следующие данные:</p>
+									<ul class="square-list">
+										<li>Имя сервера базы данных или имя хоста.</li>
+										<li>Имя базы данных.</li>
+										<li>Имя пользователя базы данных.</li>
+										<li>Пароль пользователя базы данных.</li>
+									</ul>
+									<p>Пожалуйста, запомните эти данные. Они вам пригодятся в процессе установки.</p>
+									<p>Вы также можете посмотреть следующие инструкции:</p>
+									<ul class="square-list">
+										<li><a href="/help/ru/how-create-database.html" target="_blank"> Как создать базу данных <i class="icon-external-link"></i></a></li>
+										<li><a href="https://drupal.org/documentation/install/create-database" target="_blank">Создание базы данных <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+							</section>
+							
+							<section class="block-templates" id="theme_installation">
+								<h2><i class="icon-dropbox"></i> Установка Drupal и темы</h2>
+								<p>В данном разделе описываются различные способы установки Drupal движка и темы на вашем сайт. Следуйте данным указаниям, если Drupal еще не установлен на вашем сервере.</p>
+								<p>Перед тем, как продолжить, необходимо решить, вы хотите установить Drupal с демонстрационными данными или же без них. Демонстрационные данные шаблона сделают ваш сайт в точности таким же, как на странице предварительного просмотра шаблона. Будут установлены все модули, текстовые блоки, медиа-файлы и прочее.</p>
+								<p>Если вы не готовы установить демонстрационные данные, перейдите к шагу "Установка темы без демонстрационных данных". вы также сможете установить их позже. Для этого следуйте указаниям в разделе "Установка темы с демонстрационными данными на существующий сайт".</p>
+								
+								<article id="inst_demo">
+									<h3>Установка темы с демонстрационными данными</h3>
+									<p class="box-notification"><span>Файлы профиля демонстрационных данных должны быть загружены на сервер ПЕРЕД началом установки Drupal!</span></p>
+									<p>Для установки темы с демонстрационными данными выполните следующие действия:</p>
+									<ol>
+										<li>Скопируйте папку <strong>sites/</strong> из архива с шаблоном в корневую папку Drupal-сайта на вашем сервере. вы можете заменить существующие файлы. Данная папка содержит файлы темы, модули, библиотеки, медиа-файлы и прочее.</li>
+										<li>Скопируйте папку <strong>sources/demo_profile/</strong> из архива с шаблоном в папку <strong>profiles/</strong> Drupal-сайта на вашем сервере. В данной папке содержится профиль, который поможет установить демонстрационные данные.</li>
+										<li>Скопируйте файл <strong>sources/install.inc</strong> из архива с шаблоном в папку <strong>includes/</strong> Drupal-сайта на вашем сервере. Вам нужно заменить существующий файл.</li>
+										<li>Скопируйте файл <strong>sources/system.install</strong> из архива с шаблоном в папку <strong>modules/system/</strong> Drupal-сайта на вашем сервере. Вам нужно заменить существующий файл.</li>
+									</ol>
+									<p class="box-info"><span>Замена этих файлов добавит новую опцию в процесс установки и никак не повлияет на сам движок.</span></p>
+									<ol start="5">
+										<li>Введите адрес вашего сайта в адресной строке браузера, чтобы начать процедуру установки Drupal.</li>
+										<li>На начальной странице установки вам будет предложено выбрать профиль установки. Выберите <strong>Demonstration site (Демонстрационный сайт)</strong> и нажмите кнопку <strong>Save and Continue (Сохранить и продолжить)</strong>:</li>
+									</ol>
+									<p><img src="img/inst-demo-01.png" alt="Select Demonstration site"></p>
+									<ol start="7">
+										<li>Следуйте инструкциям на экране. Заполните поле имени базы данных, имени пользователя, пароля и хоста базы данных, полученных при создании базы данных.</li>
+										<li>На шаге <strong>Choose snapshot (Выберите снапшот)</strong> выберите снапшот с названием скачанной темы, как показано на рисунке ниже, и нажмите кнопку <strong>Restore (Восстановить)</strong>.</li>
+									</ol>
+									<p class="box-notification"><span>Важно установить (развернуть) снапшот для того, чтобы заставить ваш сайт выглядеть, как лайв-демо шаблона.</span></p>
+									<p><img src="img/inst-demo-02.png" alt="Choose snapshot"></p>
+									<p class="box-info"><span>Снапшот представляет собой копию базы данных с демонстрационными данными, а также файл с информацией об использованных модулях. Сохранен снапшот в формате базы данных MySQL.</span></p>
+									<ol start="9">
+										<li>Нажмите на ссылку <strong>Visit your new site (Посетите свой новый сайт)</strong>.</li>
+									</ol>
+									<p><img src="img/inst-demo-02-1.png" alt="Click 'Visit your new site'"></p>
+									<p class="box-info"><span>Чтобы зайти на сайт в качестве администратора, используйте имя пользователя admin и пароль admin123. В целях безопасности мы рекомендуем вам сменить пароль сразу же после установки.</span></p>
+									<ol start="10">
+										<li>Установка Drupal почти завершена. Последнее, что необходимо сделать, - обновить таблицы базы данных. В адресной строке браузера введите <strong>http://www.example.com/update.php</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Следуйте инструкциям на экране.</li>
+										<li>После обновления перейдите по одной из ссылок: <strong>Front page (Главная страница сайта)</strong> или <strong>Administration pages (Панель администрирования сайта)</strong>.</li>
+									</ol>
+									<p>Вы можете просмотреть следующие инструкции:</p>
+									<ol class="square-list">
+										<li><a href="/help/ru/how-to-install-drupal-template-using-demo-profile-possible-issues.html" target="_blank">Как установить шаблон Drupal с помощью демонстрационного профиля + возможные проблемы <i class="icon-external-link"></i></a>
+									</ol>
+								</article>
+
+								<article id="inst_no_demo">
+									<h3>Установка темы без демонстрационных данных</h3>
+									<p>Для установки темы без демонстрационных данных выполните следующие указания:</p>
+									<ol>
+										<li>Скопируйте содержимое папки <strong>sites/all/themes/</strong> из архива с шаблоном в папку <strong>sites/all/themes/</strong> Drupal-сайта на вашем сервере.</li>
+									</ol>
+									<p class="box-notification"><span>Обратите внимание, что некоторые элементы шаблона реализованы с помощью модулей. На данном этапе установки модули не подключаются, поэтому внешний вид и функционал темы может несколько отличаться от того, что вы видели на странице предварительного просмотра шаблона.</span></p>
+									<ol start="2">
+										<li>Для установки модулей вам необходимо скопировать папки <strong>sites/all/modules/</strong> и <strong>sites/all/libraries/</strong> из архива с шаблоном в папку <strong>sites/all/</strong> Drupal-сайта на вашем сервере. Если вы не хотите устанавливать использованные в шаблоне модули, пропустите данный шаг. </li>
+										<li>Введите адрес вашего сайта в адресной строке браузера, чтобы начать процедуру установки Drupal.</li>
+										<li>Следуйте инструкциям на экране. Заполните поле имени, имени пользователя, пароля и хоста базы данных, полученных при ее создании.</li>
+									</ol>
+									<p><img src="img/inst-demo-01-1.png" alt="Fill DB data"></p>
+									<ol start="5">
+										<li>Зарегистрируйте администратора сайта.</li>
+										<li>Войдите на свой сайт, используя имя и пароль администратора, указанные при установке.</li>
+										<li>В панели администрирования сайта перейдите на страницу <strong>Appearance (Оформление)</strong> либо в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/appearance</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Найдите только что добавленную тему и нажмите кнопку <strong>Enable and set default (Активировать и установить по умолчанию)</strong>.</li>
+									</ol>
+									<p><img src="img/inst-no-demo-01.png" alt="Enable theme"></p>
+									<ol start="9">
+										<li>Если на втором шаге вы скопировали папки с модулями, зайдите на страницу <strong>Modules (Модули)</strong> в панели администрирования сайта либо в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/modules</strong>, где <strong>www.example.com</strong> - адрес вашего сайта. Активируйте добавленные модули. Настраивать подключенные модули вам придется на свое усмотрение.</li>
+									</ol>
+									<p>Вы можете просмотреть следующие инструкции: </p>
+									<ol class="square-list">
+										<li><a href="/help/ru/how-upload-and-install-drupal-server.html" target="_blank">Drupal 7.x. Как установить движок <i class="icon-external-link"></i></a>
+										<li><a href="/help/ru/how-to-install-drupal-7-theme.html" target="_blank">Drupal 7.x. Как установить тему <i class="icon-external-link"></i></a>
+									</ol>
+								</article>
+
+								<article id="inst_demo_exs_site">
+									<h3>Установка темы с демонстрационными данными на существующий сайт</h3>
+									<p class="box-error"><span>Установка темы с демонстрационными данными заменит весь существующий контент и настройки вашего сайта на собственные!</span></p>
+									<p class="box-notification"><span>Мы настоятельно рекомендуем вам <a href="/help/ru/phpmyadmin-how-to-backup-a-database.html" target="_blank">создать резервную копию базы данных</a> Drupal перед установкой темы с использованием снапшота.</span></p>
+									<p>Если у вас уже есть работающий сайт на Drupal, но вы все же хотите установить тему с демонстрационными данными, выполните следующие действия:</p>
+									<ol>
+										<li>Скопируйте содержимое папки <strong>sites/all/</strong> из архива с шаблоном в папку <strong>sites/all/</strong> Drupal-сайта на вашем сервере.</li>
+										<li>Скопируйте содержимое папки <strong>sites/default/</strong> из архива с шаблоном в папку <strong>sites/default/</strong> Drupal-сайта на вашем сервере.</li>
+									</ol>
+									<p class="box-error"><span>Будьте осторожны с заменой файлов! Ни в коем случае не заменяйте файлы settings.php и default.settings.php, иначе вам придется устанавливать Drupal заново!</span></p>
+									<ol start="3">
+										<li>Скопируйте папку <strong>sources/demo_profile/</strong> из архива с шаблоном в папку <strong>profiles/</strong> Drupal-сайта на вашем сервере. В данной папке хранится профиль, который поможет установить демонстрационные данные.</li>
+										<li>Войдите на сайт в качестве администратора.</li>
+										<li>В панели администрирования сайта зайдите на страницу <strong>Configuration -> File system (Настройки -> Файловая система)</strong> или перейдите по ссылке <strong>http://www.example.com/?q=admin/config/media/file-system</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>В поле <strong>Private file system path (Конфиденциальный путь файловой системы)</strong> установите значение <strong>sites/default/private/files</strong>.</li>
+										<li>Зайдите на страницу <strong>Modules (Модули)</strong> панели администрирования или перейдите по ссылке <strong>http://www.example.com/?q=admin/modules</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Убедитесь, что модуль <strong>Demonstration site</strong> включен.</li>
+										<li>Зайдите на страницу <strong>Structure -> Snapshots (Структура -> Снапшоты)</strong> панели администрирования и перейдите на вкладку <strong>Reset (Восстановление)</strong> или перейдите по ссылке <strong>http://www.example.com/?q=admin/structure/demo/reset</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Выберите снапшот <strong>theme###</strong>, где ### - номер приобретенной вами темы.</li>
+									</ol>
+									<p><img src="img/inst-demo-exs-site-01.png" alt="Select snapshot"></p>
+									<ol start="11">
+										<li>Нажмите кнопку <strong>Reset (Восстановить)</strong>. Затем подтвердите действие.</li>
+										<li>Войдите на сайт в качестве администратора.</li>
+									</ol>
+									<p class="box-info"><span>Чтоб зайти на сайт в качестве администратора после установки демонстрационных данных, используйте имя пользователя admin и пароль admin123. В целях безопасности мы рекомендуем вам сменить пароль сразу же после установки.</span></p>
+									<ol start="13">
+										<li>Последнее, что необходимо сделать, - обновить таблицы базы данных. В адресной строке браузера введите <strong>http://www.example.com/update.php</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Следуйте инструкциям на экране.</li>
+										<li>После обновления перейдите по одной из ссылок: <strong>Front page (Главная страница сайта)</strong> или <strong>Administration pages (Панель администрирования сайта)</strong>.</li>
+									</ol>
+									<p>Вы можете просмотреть следующие инструкции:</p>
+									<ol class="square-list">
+										<li><a href="/help/ru/how-to-install-drupal-7-theme.html" target="_blank">Drupal 7.x. Как установить тему <i class="icon-external-link"></i></a>
+										<li><a href="/help/ru/how-to-install-drupal-7-theme-sample-data.html" target="_blank">Drupal 7.x. Как установить демонстрационные данные <i class="icon-external-link"></i></a>
+									</ol>
+								</article>
+
+								<article id="inst_no_demo_exs_site">
+									<h3>Установка темы без демонстрационных данных на существующий сайт</h3>
+									<p>Для установки темы без демонстрационных данных на существующий сайт выполните следующие указания:</p>
+									<ol>
+										<li>Скопируйте содержимое папки <strong>sites/all/themes/</strong> из архива с шаблоном в папку <strong>sites/all/themes/</strong> Drupal-сайта на вашем сервере.</li>
+									</ol>
+									<p class="box-notification"><span>Обратите внимание, что некоторые элементы шаблона реализованы с помощью модулей. На данном этапе установки модули не подключаются, поэтому внешний вид и функционал темы может несколько отличаться от того, что вы видели на странице предварительного просмотра шаблона.</span></p>
+									<ol start="2">
+										<li>Для установки модулей вам необходимо скопировать папки <strong>sites/all/modules/</strong> и <strong>sites/all/libraries/</strong> из архива с шаблоном в папку <strong>sites/all/</strong> Drupal-сайта на вашем сервере. Если вы не хотите устанавливать использованные в шаблоне модули, пропустите данный шаг.</li>
+										<li>Войдите на свой сайт в качестве администратора.</li>
+										<li>В панели администрирования сайта перейдите на страницу <strong>Appearance (Оформление)</strong> либо в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/appearance</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Найдите только что добавленную тему и нажмите кнопку <strong>Enable and set default (Активировать и установить по умолчанию)</strong>.</li>
+									</ol>
+									<p><img src="img/inst-no-demo-01.png" alt="Enable theme"></p>
+									<ol start="6">
+										<li>Если на втором шаге вы добавили папки с модулями, зайдите на страницу <strong>Modules (Модули)</strong> в панели администрирования сайта либо в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/modules</strong>, где <strong>www.example.com</strong> - адрес вашего сайта. Активируйте добавленные модули. Настраивать подключенные модули вам придется на свое усмотрение.</li>
+									</ol>
+									<p>Вы можете просмотреть следующие инструкции:</p>
+									<ol class="square-list">
+										<li><a href="/help/ru/how-to-install-drupal-7-theme.html" target="_blank">Drupal 7.x. Как установить тему <i class="icon-external-link"></i></a>
+									</ol>
+								</article>
+							</section>
+							
+							<section class="block-templates" id="settings">
+								<h2><i class="icon-cogs"></i> Настройки</h2>
+								<p>Сайт на основе Drupal содержит множество настроек как сайта в целом, так и отдельных его элементов. В данном разделе будут рассмотрены лишь основные виды настроек.</p>
+								
+								<article id="drupal_settings">
+									<h3>Настройки сайта</h3>
+									<p>Просмотреть полный список настроек вы можете зайдя на страницу <strong>Configuration (Настройки)</strong> панели администрирования сайта либо набрав в адресной строке браузера <strong>http://www.example.com/?q=admin/config</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</p>
+									<p>Чтоб изменить основные настройки сайта, выполните следующие инструкции:</p>
+									<ol>
+										<li>Зайдите на страницу <strong>Configuration -> Site information (Настройки -> Информация о сайте)</strong> панели администрирования сайта либо наберите в адресной строке браузера <strong>http://www.example.com/?q=admin/config/system/site-information</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>
+											<p>Измените необходимые параметры:</p>
+											<ul class="square-list">
+												<li>название сайта;</li>
+												<li>слоган сайта;</li>
+												<li>электронный адрес сайта;</li>
+												<li>количество постов на странице блога (или на главной странице, если у вас есть посты, прикрепленные к главной);</li>
+												<li>адрес главной страницы сайта;</li>
+												<li>адрес страницы 403 (доступ запрещен);</li>
+												<li>адрес страницы 404 (страница не найдена).</li>
+											</ul>
+										</li>
+									</ol>
+									<p><img src="img/drupal-settings-01.png" alt="Set site name"></p>
+									<ol start="3">
+										<li>После внесения необходимых изменений, нажмите кнопку <strong>Save configuration (Сохранить настройки)</strong>.</li>
+									</ol>
+								</article>
+								
+								<article id="theme_settings">
+									<h3>Настройки темы</h3>
+									<p>Каждая тема имеет набор собственных настроек.</p>
+									<p>Чтобы изменить настройки темы, выполните следующие действия:</p>
+									<ol>
+										<li>В панели администрирования сайта зайдите на страницу <strong>Appearance (Оформление)</strong> либо в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/appearance</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Нажмите на ссылку <strong>Settings (Настройки)</strong> под именем вашей темы:</li>
+									</ol>
+									<p><img src="img/theme-settings-01.png" alt="Click theme settings"></p>
+									<ol start="3">
+										<li>
+											<p>На вкладке <strong>General Settings (Общие настройки)</strong> вы можете задать следующие параметры:</p>
+											<ul class="square-list">
+												<li>отобразить/скрыть логотип, название сайта, слоган, аватары авторов постов, аватары авторов комментариев, состояние проверки авторов комментариев, иконку для избранного, главное и вспомогательное меню;</li>
+												<li>использовать логотип по умолчанию (из темы) или загрузить собственный;</li>
+												<li>использовать иконку для избранного (фавикон) по умолчанию (из темы) или загрузить собственную;</li>
+												<li>закрепить меню вверху окна браузера.</li>
+											</ul>
+										</li>
+									</ol>
+									<p><img src="img/theme-settings-02.png" alt="General settings"></p>
+									<ol start="4">
+										<li>
+											<p>На вкладке <strong>Breadcrumb Settings (Настройки "хлебных крошек")</strong> вы можете задать следующие параметры:</p>
+											<ul class="square-list">
+												<li>отобразить/скрыть "хлебные крошки";</li>
+												<li>отобразить/скрыть "хлебные крошки", если они содержат только ссылку на главную страницу сайта;</li>
+												<li>задать разделитель между ссылками "хлебных крошек".</li>
+											</ul>
+										</li>
+									</ol>
+									<p><img src="img/theme-settings-03.png" alt="Breadcrumb Settings"></p>
+									<ol start="5">
+										<li>На вкладке <strong>Blog Settings (Настройки блога)</strong> вы можете задать заголовок блока. Оставьте данное поле пустым, чтобы заголовок блога совпадал с названием соответствующей ссылки меню.</li>
+									</ol>
+									<p><img src="img/theme-settings-04.png" alt="Blog Settings"></p>
+									<ol start="6">
+										<li>На вкладке <strong>Custom CSS (Пользовательский CSS)</strong> вы можете задать собственные стили для установленной темы.</li>
+									</ol>
+									<p><img src="img/theme-settings-05.png" alt="Custom CSS"></p>
+									<p class="box-notification"><span>Данная опция относится только к приобретенной вами теме. Вы не сможете задать стили для других тем, таких как Seven и прочих.</span></p>
+								</article>
+								
+								<article id="block_settings">
+									<h3>Настройки блоков</h3>
+									<p>Чтобы настроить блоки, использованные в шаблоне, следуйте данным инструкциям:</p>
+									<ol>
+										<li>Войдите на сайт в качестве администратора.</li>
+										<li>В панели администрирования зайдите на страницу <strong>Structure -> Blocks (Структура -> Блоки)</strong> или в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/structure/block</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>На открывшейся странице вы можете перетаскивать блоки в разные регионы:</li>
+									</ol>
+									<p><img src="img/block-settings-01.png" alt="Drag&amp;Drop blocks"></p>
+									<ol start="4">
+										<li>Вы можете перемещать блоки в разные регионы, используя выпадающее меню в колонке <strong>Region (Регион)</strong>:</li>
+									</ol>
+									<p><img src="img/block-settings-02.png" alt="Select block region"></p>
+									<ol start="5">
+										<li>Вы можете задать настройки для каждого блока в отдельности, нажав на ссылку <strong>configure (настроить)</strong> в колонке <strong>Operations (Операции)</strong>:</li>
+									</ol>
+									<p><img src="img/block-settings-03.png" alt="Configure block"></p>
+									<ol start="6">
+										<li>
+											<p>На странице настроек блока вы можете задать следующие параметры:</p>
+											<ul class="square-list">
+												<li>заголовок блока;</li>
+												<li>пользовательский CSS-класс для данного блока;</li>
+												<li>регион блока для каждой темы в отдельности;</li>
+												<li>настройки отображения (для отдельных страниц, отдельных типов материалов, отдельных ролей пользователей, для каждого пользователя);</li>
+											</ul>
+										</li>
+									</ol>
+									<p><img src="img/block-settings-04.png" alt="Block settings page"></p>
+									<p class="box-info"><span>Некоторые блоки могут содержать дополнительные настройки.</span></p>
+									<ol start="7">
+										<li>Вы также можете попасть на страницу настроек блока со страниц вашего сайта. Для этого наведите курсор мышки на нужный вам блок, затем нажмите на пиктограмму шестеренки в правом верхнем углу блока и выберите пункт <strong>Configure block (Настроить блок)</strong>. Эта опция будет доступна только, если вы войдете на сайт в качестве администратора:</li>
+									</ol>
+									<p><img src="img/block-settings-05.png" alt="Click cog to configure block"></p>
+								</article>
+								
+								<article id="modules_settings">
+									<h3>Настройки модулей</h3>
+									<p>В наших шаблонах используются следующие модули:</p>
+									<ul class="square-list">
+										<li><strong>AddThis</strong> - добавляет кнопки "Поделится в социальных сетях";</li>
+										<li><strong>Administration menu</strong> - является более удобной альтернативой верхнего административного меню;</li>
+										<li><strong>Block Class</strong> - добавляет пользовательский класс на блоки;</li>
+										<li><strong>Cctags</strong> - позволяет создать облако тегов;</li>
+										<li><strong>Colorbox</strong> - позволяет открывать изображения в лайтбоксах;</li>
+										<li><strong>Demonstration site</strong> - позволяет создавать резервные копии базы данных;</li>
+										<li><strong>Flex Slider</strong> - добавляет слайдер;</li>
+										<li><strong>Media, Media: Vimeo, Media: YouTube</strong> - позволяют добавлять в материал не только изображения, но и также видео и аудио;</li>
+										<li><strong>Menu block</strong> - позволяет дублировать меню;</li>
+										<li><strong>Module Filter</strong> - позволяет фильтровать модули в панели администрирования;</li>
+										<li><strong>Olark Chat</strong> - добавляет возможность вставки чата;</li>
+										<li><strong>Panels</strong> - позволяет создавать страницы;</li>
+										<li><strong>Rate, Voting API</strong> - добавляют рейтинг на страницы материала;</li>
+										<li><strong>Retina Images</strong> - позволяет нарезать изображения для retina-экранов в размере 2x;</li>
+										<li><strong>Simple Google Maps</strong> - добавляет возможность вставки Google-карты на основе адреса;</li>
+										<li><strong>Superfish</strong> - добавляет выпадающее меню;</li>
+										<li><strong>TM Follow</strong> - создает два блока ссылок, которые связывают сайт и его пользователей с сайтами социальных сетей;</li>
+										<li><strong>Views, Semantic Views, Views Isotope, Views Slideshow</strong> - позволяет создавать выборку материала, комментариев, пользователей и представлять их в виде блоков и страниц;</li>
+										<li><strong>Wysiwyg</strong> - добавляет текстовый редактор;</li>
+										<li>и другие.</li>
+									</ul>
+									<p>Каждый из модулей может содержать собственные настройки. Чтобы настроить модуль, выполните следующие инструкции:</p>
+									<ol>
+										<li>Войдите на сайт в качестве администратора.</li>
+										<li>В панели администрирования зайдите на страницу <strong>Modules (Модули)</strong> или в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/modules</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Найдите нужный вам модуль. Для этого можете воспользоваться фильтром.</li>
+										<li>Нажмите ссылку <strong>Configure (Настроить)</strong> напротив нужного вам модуля.</li>
+									</ol>
+									<p><img src="img/modules-settings-01.png" alt="Click configure link"></p>
+									<ol start="5">
+										<li>Сделайте необходимые изменения и сохраните настройки.</li>
+									</ol>
+									<p>Вы также можете посмотреть следующие инструкции:</p>
+									<ul class="square-list">
+										<li><a href="/help/ru/drupal-7-how-to-accessedit-blocks-views-and-panels-from-front-end.html" target="_blank">Drupal 7. Как получить доступ и редактировать блоки и панели на страницах сайта <i class="icon-external-link"></i></a></li>
+										<li><a href="https://drupal.org/documentation/modules/contextual" target="_blank">Работа с контекстными ссылками <i class="icon-external-link"></i></a></li>
+										<li><a href="https://drupal.org/documentation/modules/block" target="_blank">Работа с блоками <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+							</section>
+							
+							<section class="block-templates" id="content_manage">
+								<h2><i class="icon-edit"></i> Управление содержимым</h2>
+								<p>В данной главе мы рассмотрим, каким образом формируется содержимое сайта, а также как управлять тем или иным видом содержимого, если вы выбрали установку с демонстрационными данными.</p>
+								
+								<article id="menu_manage">
+									<h3>Управление меню</h3>
+									<p>В шаблоне могут быть использованы следующие типы меню:</p>
+									<ul class="square-list">
+										<li><strong>Main menu (Главное меню)</strong> содержит ссылки на основные страницы сайта;</li>
+										<li><strong>User menu (Пользовательское меню)</strong> содержит ссылки, связанные с учетной записью пользователя, такие как "Зарегистрироваться", "Войти" и пр.;</li>
+										<li><strong>Footer menu (Меню в футере сайта)</strong> дублирует главное меню.</li>
+									</ul>
+									<p>Рассмотрим каждое из них более детально.</p>
+
+									<h4>Главное меню</h4>
+									<p><strong>Чтобы отредактировать ссылки главного меню, выполните следующие действия:</strong></p>
+									<ol>
+										<li>В панели администрирования зайдите на страницу <strong>Structure -> Menus (Структура -> Меню)</strong> или в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/structure/menu</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Напротив данного меню нажмите на ссылку <strong>List links (Просмотреть ссылки)</strong>.</li>
+									</ol>
+									<p><img src="img/menu-manage-01.png" alt="Click 'List links'"></p>
+									<ol start="3">
+										<li>Чтобы добавить ссылку, нажмите <strong>Add link (Добавить ссылку)</strong> вверху страницы.</li>
+									</ol>
+									<p><img src="img/menu-manage-02.png" alt="Click 'Add link'"></p>
+									<ol start="4">
+										<li>Чтобы отредактировать ссылку, нажмите <strong>Edit (Редактировать)</strong>.</li>
+									</ol>
+									<p><img src="img/menu-manage-03.png" alt="Click 'Edit'"></p>
+									<ol start="5">
+										<li>Чтобы удалить ссылку, нажмите <strong>Delete (Удалить)</strong>.</li>
+									</ol>
+									<p><img src="img/menu-manage-04.png" alt="Click 'delete'"></p>
+									<ol start="6">
+										<li>Чтобы изменить порядок ссылок, перетащите ссылку в нужную позицию, а затем нажмите кнопку <strong>Save configuration (Сохранить конфигурацию)</strong>.</li>
+									</ol>
+									<p><img src="img/menu-manage-05.png" alt="Drag&amp;Drop link"></p>
+									
+									<p><strong>Чтобы настроить выпадающее меню, выполните следующие инструкции:</strong></p>
+									<ol>
+										<li>В панели администрирования зайдите на страницу <strong>Structure -> Blocks (Структура -> Блоки)</strong> или в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/structure/block</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Найдите блок с названием данного меню.</li>
+										<li>Нажмите на ссылку <strong>Configure (Настроить)</strong> напротив данного блока.</li>
+										<li>Внесите изменения в разделе <strong>Superfish settings (Настройки Superfish)</strong>.</li>
+									</ol>
+									<p><img src="img/menu-manage-06.png" alt="Fill Superfish settings"></p>
+									<ol start="5">
+										<li>Нажмите кнопку <strong>Save block (Сохранить блок)</strong>.</li>
+									</ol>
+									<p><strong>Чтобы переместить меню, выполните следующие инструкции:</strong></p>
+									<ol>
+										<li>В панели администрирования зайдите на страницу <strong>Structure -> Blocks (Структура -> Блоки)</strong> или в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/structure/block</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Найдите блок с названием данного меню.</li>
+										<li>Переместите блок меню в нужный регион так же, как обычный блок.</li>
+										<li>Нажмите кнопку <strong>Save blocks (Сохранить блоки)</strong>.</li>
+									</ol>
+
+									<h4>Пользовательское меню</h4>
+									<p>Пользовательское меню - это стандартное меню Drupal. Оно не имеет выпадающих вложенных меню. Чтобы отредактировать или переместить данное меню, вы можете воспользоваться теми же инструкциями, что и для главного меню.</p>
+
+									<h4>Меню в футере сайта</h4>
+									<p>Меню в футере сайта дублирует главное меню. Чтобы настроить данное меню, выполните следующие инструкции:</p>
+									<ol>
+										<li>В панели администрирования зайдите на страницу <strong>Structure -> Blocks (Структура -> Блоки)</strong> или в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/structure/block</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Найдите блок с названием данного меню.</li>
+										<li>Нажмите на ссылку <strong>Configure (Настроить)</strong> напротив данного блока.</li>
+										<li>
+											<p>На открывшейся странице, кроме стандартных полей блока, заполните следующие поля:</p>
+											<ul class="square-list">
+												<li><strong>Menu (Меню)</strong> - название меню, которое следует дублировать;</li>
+												<li><strong>Starting level (Начальный уровень)</strong> - видимость блока на странице. Блоки, которые начинаются с первого уровня, всегда будут видны. Блоки, которые начинаются со второго и более уровня, будут видны на страницах, где данные пункты меню будут активными.</li>
+												<li><strong>Maximum depth (Максимальная глубина)</strong> - количество отображаемых уровней меню. Поставьте 1, чтоб исключить все подменю.</li>
+											</ul>
+										</li>
+									</ol>
+									<p><img src="img/menu-manage-07.png" alt="Fill block options"></p>
+									<ol start="5">
+										<li>Нажмите кнопку <strong>Save block (Сохранить блок)</strong>.</li>
+									</ol>
+									<p>Вы также можете посмотреть следующие инструкции:</p>
+									<ul class="square-list">
+										<li><a target="_blank" href="/help/ru/drupal-7-how-to-install-drop-down-menu-module.html"> Drupal 7. Как установить модуль выпадающего меню (Superfish) <i class="icon-external-link"></i></a></li>
+										<li><a href="/help/ru/drupal-7-how-to-add-a-new-page-and-a-new-menu-button.html" target="_blank"> Drupal 7. Как добавить новую страницу и кнопку меню <i class="icon-external-link"></i></a></li>
+										<li><a href="https://drupal.org/node/754652" target="_blank">Документация по модулю Superfish <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+								
+								<article id="node_manage">
+									<h3>Управление материалами</h3>
+									<p>В шаблоне присутствуют следующие основные типы материалов:</p>
+									<ul class="square-list">
+										<li><strong>Banner (Баннер)</strong> представляет собой название компании, логотип и дополнительную информацию. Может использоваться в блоках "Our partners" (Наши партнеры), "Our clients" (Наши клиенты) и т.п.;</li>
+										<li><strong>Employee (Сотрудник)</strong> представляет собой фотографию сотрудника и короткую информацию о нем. Может использоваться в блоках "Our team" (Наша команда), "Our staff" (Наша персонал) и т.п.;</li>
+										<li><strong>FAQ (ЧАВО)</strong> представляет собой материал формата "вопрос-ответ". Используется на странице "Часто задаваемые вопросы";</li>
+										<li><strong>Map (Карта)</strong> представляет собой поле адреса и краткую информацию. Используется в виде Google-карты на странице контактов. Для изменения карты со страницы контактов отредактируйте материал с названием "Our location";</li>
+										<li><strong>Portfolio item (Элемент портфолио)</strong> представляет собой заголовок, изображение и краткую информацию. Используется на страницах "Portfolio" (Портфолио), "Gallery" (Галерея), "Services" (Услуги) и т.п.;</li>
+										<li><strong>Service (Услуга)</strong> представляет собой заголовок, изображение и краткую информацию. Может использоваться в блоках "Services" (Услуги) и т.п.;</li>
+										<li><strong>Slide (Слайд)</strong> представляет собой заголовок, изображение и краткую информацию. Используется в слайдере на главной странице;</li>
+										<li><strong>Testimonial (Отзыв)</strong> - представляет собой кроткий отзыв и информацию о его авторе. Может использоваться в блоках "Testimonials" (Отзывы), "What people say about us" (Что о нас говорят) и т.п.;</li>
+										<li>и прочие.</li>
+									</ul>
+									<p class="box-notification"><span>Изменения данных типов материалов (добавление, редактирование, удаление) сразу же отображаются в блоках и на страницах, где они используются.</span></p>
+									<p>Некоторые модули могут добавлять свои типы материалов. К примеру, модуль Panels добавляет тип материала <em>Panel (Панель)</em>.</p>
+									<p>Вы также можете создавать собственные типы материала.</p>
+									<p>Для изменения, удаления или управления материалом выполните следующие действия:</p>
+									<ol>
+										<li>Чтобы просмотреть полный список материалов, в панели администрирования зайдите на страницу <strong>Content (Материалы)</strong> или в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/content</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Чтобы создать материал, нажмите на ссылку <strong>Add content (Добавить материал)</strong>.</li>
+									</ol>
+									<p><img src="img/node-manage-01.png" alt="Click 'Add content'"></p>
+									<ol start="3">
+										<li>На открывшейся странице выберите тип материала.</li>
+									</ol>
+									<p><img src="img/node-manage-02.png" alt="Chose content type"></p>
+									<ol start="4">
+										<li>Заполните необходимые поля и нажмите кнопку <strong>Save (Сохранить)</strong>.</li>
+										<li>Чтобы отредактировать существующий материал, на странице <strong>Content (Материалы)</strong> в поле <strong>Show only items where (Показать только элементы, где)</strong> выберите тип материала и нажмите кнопку <strong>Filter (Отфильтровать)</strong>.</li>
+									</ol>
+									<p><img src="img/node-manage-03.png" alt="Filter content"></p>
+									<ol start="6">
+										<li>Чтобы отредактировать материал, нажмите ссылку <strong>Edit (Редактировать)</strong> напротив его названия.</li>
+									</ol>
+									<p><img src="img/node-manage-04.png" alt="Click 'Edit'"></p>
+									<ol start="7">
+										<li>Чтобы удалить материал, нажмите ссылку <strong>Delete (Удалить)</strong> напротив его названия.</li>
+									</ol>
+									<p><img src="img/node-manage-05.png" alt="Click 'Delete'"></p>
+									<p>Вы также можете посмотреть следующие инструкции:</p>
+									<ul class="square-list">
+										<li><a target="_blank" href="/help/ru/drupal-content-types-overview.html"> Drupal. Обзор типов контента <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+								
+								<article id="page_manage">
+									<h3>Управление страницами</h3>
+									<p>Все страницы шаблона созданы с помощью модуля <strong>Panels (Панели)</strong>.</p>
+									<p>Для управления страницами выполните следующие действия:</p>
+									<ol>
+										<li>Чтоб просмотреть все существующие страницы, в панели администрирования зайдите на страницу <strong>Structure -> Pages (Структура -> Страницы)</strong> или в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/structure/pages</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Чтоб создать страницу, вверху открывшейся страницы нажмите ссылку <strong>Add custom page (Добавить пользовательскую страницу)</strong>.</li>
+									</ol>
+									<p><img src="img/page-manage-01.png" alt="Click 'Add custom page'"></p>
+									<ol start="3">
+										<li>Следуйте инструкциям на экране, заполните все необходимые поля, сохраните внесенные данные.</li>
+										<li>Чтобы отредактировать существующую страницу, нажмите на ссылку <strong>Edit (Редактировать)</strong> напротив нужного заголовка.</li>
+									</ol>
+									<p><img src="img/page-manage-02.png" alt="Click 'Edit'"></p>
+									<ol start="5">
+										<li>Чтобы удалить страницу, в режиме редактирования нажмите на ссылку <strong>Delete (Удалить)</strong> вверху страницы.</li>
+									</ol>
+									<p><img src="img/page-manage-03.png" alt="Click 'Delete'"></p>
+									<p>Вы также можете посмотреть следующие инструкции:</p>
+									<ul class="square-list">
+										<li><a href="/help/ru/drupal-7-how-to-add-a-new-page-and-a-new-menu-button.html" target="_blank">Drupal 7. Как добавить новую страницу и кнопку меню <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+								
+								<article id="views_manage">
+									<h3>Управление представлениями (Views)</h3>
+									<p>Большая часть содержимого шаблона создана с помощью представлений, таких как:</p>
+									<ul class="square-list">
+										<li><strong>Archive (Архив)</strong> собирает тип материала "Blog entry" (Запись блога), группирует их по месяцам года и выводит в виде блока или страницы.</li>
+										<li><strong>Banners (Баннеры)</strong> собирает записи материала типа "Banner" (Баннер) и отображает их в качестве блока.</li>
+										<li><strong>Categories (Категории)</strong> собирает термины таксономии из словаря <em>"Blog categories" (Категории блога)</em> и выводит их в виде блока.</li>
+										<li><strong>FAQs (ЧАВО)</strong> собирает записи материала типа FAQs(ЧАВО) и выводит их в виде страницы.</li>
+										<li><strong>Portfolio (Портфолио)</strong> собирает записи материала типа "Portfolio Item" (Элемент портфолио) и выводит их в виде страниц Portfolio (Gallery, Services) в две, три или четыре колонки.</li>
+										<li><strong>Portfolio filter (Фильтр портфолио)</strong> создает блок фильтра для портфолио, используется в представлении "Portfolio" (Портфолио).</li>
+										<li><strong>Recent comments (Последние комментарии)</strong> собирает комментарии и выводит их в виде блока или страницы.</li>
+										<li><strong>Recent posts (Последние записи)</strong> собирает записи материала типа "Blog entry" (Запись блога) и выводит их в виде блока.</li>
+										<li><strong>Slider (Слайдер)</strong> собирает записи материала типа "Slide" (Слайд) и выводит их в виде блока слайдера.</li>
+										<li><strong>Team (Команда)</strong> собирает записи материала типа "Employee" (Сотрудник) и выводит их в виде блока.</li>
+										<li><strong>Testimonials (Отзывы)</strong> собирает записи материала типа "Testimonial" (Отзыв) и выводит их в виде страницы или блока.</li>
+										<li>и прочие.</li>
+									</ul>
+									<p>Для управления представлениями выполните следующие действия:</p>
+									<ol>
+										<li>Чтоб просмотреть все существующие представления, в панели администрирования зайдите на страницу <strong>Structure -> Views (Структура -> Представления)</strong> или в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/structure/views</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Чтобы создать новое представление, нажмите на ссылку <strong>Add new view (Добавить новое представление)</strong> вверху открывшейся страницы.</li>
+									</ol>
+									<p><img src="img/views-manage-01.png" alt="Click 'Add new view'"></p>
+									<ol start="3">
+										<li>На открывшейся странице заполните название представления, тип материала, вид сортировки, в каком виде отображать.</li>
+										<li>Чтобы указать дополнительные параметры, нажмите кнопку <strong>Continue &amp; edit (Продолжить и редактировать)</strong>. Чтобы закончить создание представления, нажмите кнопку <strong>Save &amp; exit (Сохранить и выйти)</strong>.</li>
+									</ol>
+									<p><img src="img/views-manage-02.png" alt="Fill view data"></p>
+									<ol start="5">
+										<li>Чтобы отредактировать существующее представление, выберите пункт <strong>Edit (Редактировать)</strong> в выпадающем списке напротив нужного представления.</li>
+									</ol>
+									<p><img src="img/views-manage-03.png" alt="Click 'Edit'"></p>
+									<p class="box-notification"><span>Не вносите изменения в существующие представления, если вы не уверены в том, что вы делаете.</span></p>
+									<ol start="6">
+										<li>Чтобы удалить существующее представление, выберите пункт <strong>Delete (Удалить)</strong> в выпадающем списке напротив нужного представления.</li>
+									</ol>
+									<p><img src="img/views-manage-04.png" alt="Click 'Delete'"></p>
+									<ol start="7">
+										<li>Представлениями, которые отображены в виде блоков, можно управлять так же, как и обычными блоками. Вы также можете попасть на страницу настроек представления в виде блока со страниц своего сайта. Для этого наведите курсор мышки на нужный вам блок, затем нажмите на пиктограмму шестеренки в правом верхнем углу блока и выберите пункт <strong>Configure block (Настроить блок)</strong>:</li>
+									</ol>
+									<p><img src="img/views-manage-05.png" alt="Click 'Edit view'"></p>
+									<ol start="8">
+										<li>Аналогичным образом настраиваются представления, которые отображены в виде страниц. Наведите курсор мышки на область содержимого нужной вам страницы, затем нажмите на пиктограмму шестеренки в правом верхнем углу страницы и выберите пункт <strong>Edit view (Настроить представление)</strong>:</li>
+									</ol>
+									<p><img src="img/views-manage-06.png" alt="Click 'Edit view'"></p>
+									<p>Вы также можете посмотреть следующие инструкции:</p>
+									<ul class="square-list">
+										<li><a target="_blank" href="/help/ru/drupal-7-how-to-use-views-module-and-editconfigure-it.html"> Drupal 7. Как использовать и настраивать модуль отображения контента <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+								
+								<article id="media_manage">
+									<h3>Управление медиа-содержимым</h3>
+									<p>Загрузка изображений и видео в шаблоне осуществляется по средствам модуля <strong>Media (Медиа)</strong>.</p>
+									<p>Для управления медиа-содержимым выполните следующие действия:</p>
+									<ol>
+										<li>Чтоб просмотреть полный список медиа-файлов, в панели администрирования зайдите на страницу <strong>Content (Материалы)</strong> и перейдите на вкладку <strong>Media (Медиа)</strong> или в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/content/media</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+										<li>Чтобы удалить существующие изображения или видео, отметьте их, в появившемся поле <strong>Operations (Операции)</strong> выберите <strong>Delete (Удалить)</strong> и нажмите кнопку <strong>Submit (Подтвердить)</strong>.</li>
+									</ol>
+									<p><img src="img/media-manage-01.png" alt="Delete media files"></p>
+									<ol start="3">
+										<li>Для того, чтобы добавить медиа-файл в материал, в режиме создания или редактирования материала нажмите кнопку <strong>Select media (Выбрать медиа)</strong>.</li>
+									</ol>
+									<p><img src="img/media-manage-02.png" alt="Click 'Select media'"></p>
+									<ol start="4">
+										<li>
+											<p>В появившемся окне:</p>
+											<ul class="square-list">
+												<li>во вкладке <strong>Upload (Загрузить)</strong> вы можете загрузить изображение с вашего компьютера;</li>
+												<li>во вкладке <strong>Web</strong> вы можете указать ссылку на изображение, размещенное в Интернете, а также ссылку на видео с сайтов YouTube и Vimeo;</li>
+												<li>во вкладке <strong>Library (Библиотека)</strong> вы можете выбрать одно из изображений или видео, уже загруженных на ваш сайт.</li>
+											</ul>
+											После выбора медиа-файла нажмите кнопку <strong>Submit (Подтвердить)</strong>.
+										</li>
+									</ol>
+									<p><img src="img/media-manage-03.png" alt="Chose media"></p>
+									<p class="box-notification"><span>Пожалуйста, примите к сведению, что добавить видео вы сможете только для типа материала <em>Blog entry (Запись блога)</em>.</span></p>
+									<p>Вы также можете посмотреть следующие инструкции:</p>
+									<ul class="square-list">
+										<li><a href="/help/ru/how-customize-primary-links.html" target="_blank">Drupal 7.x. Как редактировать меню "Основные ссылки" <i class="icon-external-link"></i></a></li>
+										<li><a href="https://drupal.org/node/754652" target="_blank">Документация по модулю Superfish <i class="icon-external-link"></i></a></li>
+									</ul>
+								</article>
+							</section>
+							
+							<section class="block-templates" id="chart">
+								<h2><i class="icon-comments-alt"></i> Olark live chart</h2>
+								<p>Для того, чтобы добавить Olark-чат, как на демо-странице шаблона, выполните следующие действия:</p>
+								<ol>
+									<li>Зарегистрируйтесь на <a href="https://www.olark.com/install" target="_blank">официальном сайте Olark</a>.</li>
+									<li>Заполните все необходимые данные.</li>
+									<li>Скопируйте полученный код.</li>
+								</ol>
+								
+								<div class="flexslider clearfix img-polaroid">
+									<ul class="slides">
+										<li>
+											<img src="img/chart-01.png" alt="Register on olark.com">
+											<div class="flex-caption">
+												<p>1. Зарегистрируйтесь на официальном сайте Olark</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/chart-02.png" alt="Enter data">
+											<div class="flex-caption">
+												<p>Заполните все необходимые данные.</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/chart-03.png" alt="Copy code">
+											<div class="flex-caption">
+												<p>Скопируйте полученный код.</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+	
+								<ol start="4">
+									<li>На своем сайте в панели администрирования зайдите на страницу <strong>Configuration (Настройки)</strong> и в разделе <strong>Web services (Web-сервисы)</strong> выберите <strong>Olark settings (Настройки Olark)</strong>. Вы также можете попасть на данную страницу, перейдя по ссылке <strong>http://www.example.com/?q=admin/config/services/olark</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</li>
+									<li>Вставьте скопированный код в поле <strong>Olark code (Код Olark)</strong></li>
+								</ol>
+								<p><img src="img/chart-04.png" alt="Paste code"></p>
+								<ol start="6">
+									<li>Нажмите на кнопку <strong>Save configuration (Сохранить настройки)</strong>.</li>
+									<li>Для настройки чата зайдите на сайт Olark под своей учетной записью.</li>
+								</ol>
+								<p>Вы также можете посмотреть следующие инструкции:</p>
+								<ul class="square-list">
+									<li><a href="http://www.olark.com/customer/portal/articles/337453-getting-started-guide" target="_blank">Начиная работать с Olark <i class="icon-external-link"></i></a></li>
+									<li><a href="https://www.olark.com/download/handbook-en-US.pdf?download" target="_blank">Руководство Olark <i class="icon-external-link"></i></a></li>
+									<li><a href="https://drupal.org/node/1874984" target="_blank">Документация по модулю "Olark Chat" для Drupal <i class="icon-external-link"></i></a></li>
+								</ul>
+							</section>
+
+							<section class="block-templates" id="conclusion">
+								<h2><i class="icon-link"></i> Полезные ссылки</h2>
+								<ul class="square-list">
+									<li><a href="/help/cms-blog-templates/drupal/drupal-tutorials/" target="_blank">Обучающие материалы по Drupal <i class="icon-external-link"></i></a></li>
+									<li><a href="https://drupal.org/documentation" target="_blank">Документация по Drupal <i class="icon-external-link"></i></a></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer
+	================================================== -->
+	<footer>
+		<div class="container">	
+			<div class="span12">
+				<span>Drupal документация</span><br>
+				&copy; <span id="date"></span> <span id="copyright">Template Monster</span>
+			</div>
+		</div>
+	</footer>
+	<div id="back-top">
+		<a href="#"><i class="icon-double-angle-up"></i></a>
+	</div>
+
+	<script>
+		var _gaq = _gaq || []; 
+		_gaq.push(['_setAccount', 'UA-2787305-5']); 
+		_gaq.push(['_trackPageview']); 
+
+		(function() { 
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; 
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+		})();
+	</script>
+</body>
+</html>
