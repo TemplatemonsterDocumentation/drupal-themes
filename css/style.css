@@ -106,7 +106,7 @@ h1 {
 h2 {
 	color: #000000;
 	font-size: 27px;
-	font-weight: normal;
+	font-weight: 300;
 	padding: 39px 0 19px;
 }
 h2 small {
@@ -352,9 +352,6 @@ header .brand {
 .bs-docs-sidenav li.act_item dt {
 	background: #f5f5f5;
 }
-.bs-docs-sidenav li.act_item dt a:before {
-	color: #0179c6;
-}
 .bs-docs-sidenav li.open_item dt i:before {
 	content: "\f068";
 }
@@ -381,7 +378,6 @@ header .brand {
 	color: #3a3a3a;
 	display: block;
 	font-size: 13px;
-	font-weight: bold;
 	margin: 0;
 	padding: 10px 30px 10px 43px;
 	position: relative;
@@ -389,7 +385,7 @@ header .brand {
 }
 .bs-docs-sidenav li dt a:before,
 .bs-docs-sidenav > li > a:before {
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: normal;
 	left: 14px;
 	position: absolute;
@@ -631,6 +627,22 @@ header .brand {
 	padding: 15px 30px 15px 94px;
 	position: relative;
 }
+.box-info strong,
+.box-error strong,
+.box-notification strong {
+	color: inherit;
+}
+.box-info a,
+.box-error a,
+.box-notification a{
+	color: inherit;
+	text-decoration: underline;
+}
+.box-info a:hover,
+.box-error a:hover,
+.box-notification a:hover{
+	text-decoration: none;
+}
 .box-info span,
 .box-error span,
 .box-notification span {
@@ -747,6 +759,9 @@ ul.square-list {
 ul.square-list li {
 	list-style: square;
 }
+.indent-left {
+	margin-left: 25px;
+}
 
 
 /*==========================================================================
@@ -796,3 +811,141 @@ footer {
 			font-size: 27px;
 			line-height: 51px;
 		}
+
+
+/*==========================================================================
+6. MODAL
+===========================================================================*/
+.modal_bg {
+	background: rgba(0, 0, 0, .4);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 997;
+}
+
+.modal {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4);
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: none;
+	left: 50%;
+	margin-left: -160px;
+	padding: 20px;
+	position: fixed;
+	top: 150px;
+	width: 320px;
+	z-index: 998;
+}
+	.modal h3 {
+		color: #000;
+		padding-bottom: 20px;
+		padding-top: 0;
+	}
+
+
+.modal_remove {
+	cursor: pointer;
+	font-size: 19px;
+	padding: 2px;
+}
+
+#modal_languages li a {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+	#modal_languages li a:hover {
+		background: #f5f5f5;
+	}
+
+#modal_languages img {
+	float: right;
+	position: relative;
+	top: 2px;
+}
+
+
+table.table {
+	border: 1px solid #ccc;
+	border-spacing: 0;
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+	table.table td {
+		border-left: 1px solid #ccc;
+		border-top: 1px solid #ccc;
+		padding: 2px 5px;
+	}
+	table.table th {
+		border-left: 1px solid #ccc;
+		padding: 2px 5px;
+	}
+		table.table td:first-child,
+		table.table th:first-child {
+			border-left: none;
+		}
+	table.table .icon-check {
+		/*color: green;*/
+		display: block;
+		text-align: center;
+	}
+	table.table .icon-check-empty {
+		/*color: red;*/
+		display: block;
+		text-align: center;
+	}
+	table.table .path {
+		display: inline-block;
+		font-style: italic;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+	table.table .required {
+		color: red;
+		font-style: italic;
+	}
+	table.table .recomended {
+		color: orange;
+		font-style: italic;
+	}
+	table.table .border-bottom {
+		border-bottom: 2px solid #ccc;
+	}
+
+.item1 dt a:before,
+.item1 h2 i,
+.item1 h2 small {
+	color: #2f5c93;
+}
+
+.item2 dt a:before,
+.item2 h2 i,
+.item2 h2 small {
+	color: #ef5829;
+}
+
+.item3 dt a:before,
+.item3 h2 i,
+.item3 h2 small {
+	color: #31c7f3;
+}
+
+.item4 dt a:before,
+.item4 h2 i,
+.item4 h2 small {
+	color: #7fb945;
+}
+
+.item5 dt a:before,
+.item5 h2 i,
+.item5 h2 small {
+	color: #e18622;
+}
