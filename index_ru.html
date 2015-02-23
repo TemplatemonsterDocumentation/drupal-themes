@@ -166,6 +166,20 @@
 								<li class="nav-item item5">
 									<dl class="slide-down">
 										<dt>
+											<a href="#onepage_template" class="icon-file-text-alt">Одностраничный шаблон</a>
+											<i class="icon-sample"></i>
+										</dt>
+										<dd>
+											<ul class="list">
+												<li><a href="#onepage_content">Содержимое</a></li>
+												<li><a href="#onepage_menu">Меню</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li class="nav-item item6">
+									<dl class="slide-down">
+										<dt>
 											<a href="#conclusion" class="icon-link">Полезные ссылки</a>
 										</dt>
 										<dd></dd>
@@ -2172,6 +2186,54 @@
 								</article>
 							</section>
 
+<section class="block-templates item5" id="onepage_template">
+								<h2><i class="icon-file-text-alt"></i> Одностраничные шаблоны <small><i>Особенности работы</i></small></h2>
+								<p>Для одностраничных шаблонов актуальны все вышенаписанные инструкции.</p>
+								
+								<article id="onepage_content">
+									<h3>Содержимое</h3>
+									<p>Чтобы внести изменения в содержимое шаблона, в панели администрирования зайдите на страницу <strong>Structure → Blocks (Структура → Блоки)</strong> или в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/structure/block</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</p>
+									<p>Разместите блоки в нужные регионы и сохраните настройки.</p>
+									<p class="box-notification"><span>Проследите, чтобы все необходимые блоки были размещены на Главной.</span></p>
+									<p>Чтобы разместить блок только на главной, выполните следующие действия:</p>
+									<ol>
+										<li>В режиме редактирования блока перейдите к Visibility settings (Настройки видимости) и переключитесь на вкладку <strong>Pages (Страницы)</strong>.</li>
+										<li>В поле <strong>Show block on specific pages (Показать блок на определенных страницах)</strong> выберите пункт <strong>Only the listed pages (Только на перечисленных страницах)</strong>.</li>
+										<li>Здесь же в текстовом поле введите <code>&lt;front&gt;</code>.</li>
+									</ol>
+									<p><img src="img/block-settings-06.png" alt="Show only on front page"></p>
+								</article>
+
+								<article id="onepage_menu">
+									<h3>Menu</h3>
+									<p class="box-notification"><span>Убедитесь, что модуль <strong>Superfish</strong> включен.</span></p>
+									<p>После того, как все блоки размещены в нужные регионы, перейдите к редактированию главного меню (Main menu).</p>
+									<p>Удаление и изменения порядка пунктов меню осуществляется так же, как и в обычном меню.</p>
+									<p>Чтобы добавить/изменить пункт меню, в поле <strong>Path (Путь)</strong> введите ссылку вида <code>&lt;front&gt;#block-id</code>, где <strong>#block-id</strong> - id блока или региона.</p>
+									<p>Вы можете воспользоваться следующими id:</p>
+									<ul class="square-list">
+										<li><strong>#home</strong> - id начала страницы;</li>
+										<li><strong>#content</strong> - id региона Content;</li>
+										<li><strong>#section_1_wrapper</strong> - id региона Section 1;</li>
+										<li><strong>#section_2_wrapper</strong> - id региона Section 2;</li>
+										<li><strong>#section_3_wrapper</strong> - id региона Section 3;</li>
+										<li><strong>#section_4_wrapper</strong> - id региона Section 4;</li>
+										<li><strong>#section_5_wrapper</strong> - id региона Section 5;</li>
+										<li><strong>#section_6_wrapper</strong> - id региона Section 6;</li>
+										<li><strong>#section_7_wrapper</strong> - id региона Section 7;</li>
+										<li><strong>#section_8_wrapper</strong> - id региона Section 8;</li>
+										<li><strong>#section_9_wrapper</strong> - id региона Section 9;</li>
+										<li><strong>#section_10_wrapper</strong> - id региона Section 10;</li>
+										<li>а также id любого блока.</li>
+									</ul>
+									<p>После того, как все изменения в меню внесены, перейдите на страницу <strong>Structure → Blocks (Структура → Блоки)</strong> или в адресной строке браузера наберите <strong>http://www.example.com/?q=admin/structure/block</strong>, где <strong>www.example.com</strong> - адрес вашего сайта.</p>
+									<p>Переместите блок <strong>(Superfish)</strong> в регион <strong>Menu</strong>.</p>
+									<p>Проверьте, чтобы в настройках данного блока в поле <strong>Menu parent (Родительское меню)</strong> был выбран пункт <strong>&lt;Main menu&gt;</strong>.</p>
+									<p><img src="img/menu-manage-08.png" alt="Menu settings"></p>
+									Сохраните настройки.
+								</article>
+							</section>
+                            
 							<section class="block-templates item5" id="conclusion">
 								<h2><i class="icon-link"></i> Полезные ссылки <small><i>Еще немного информации</i></small></h2>
 								<ul class="square-list">
