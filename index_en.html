@@ -166,6 +166,20 @@
 								<li class="nav-item item5">
 									<dl class="slide-down">
 										<dt>
+											<a href="#onepage_template" class="icon-file-text-alt">One page template</a>
+											<i class="icon-sample"></i>
+										</dt>
+										<dd>
+											<ul class="list">
+												<li><a href="#onepage_content">Content</a></li>
+												<li><a href="#onepage_menu">Menu</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li class="nav-item item6">
+									<dl class="slide-down">
+										<dt>
 											<a href="#conclusion" class="icon-link">Useful links</a>
 										</dt>
 										<dd></dd>
@@ -2173,6 +2187,54 @@
 									<p><img src="img/shortcodes-05.png" alt="Sortcode 'Progressbar'"></p>
 								</article>
 							</section>
+							<section class="block-templates item5" id="onepage_template">
+								<h2><i class="icon-file-text-alt"></i> One-page templates <small><i>work specifics</i></small></h2>
+								<p> All the instructions, listed above are valid for one-page templates.</p>
+								
+								<article id="onepage_content">
+									<h3>Content</h3>
+									<p>In order to change template content, open your site admin panel and go to <strong>Structure → Blocks </strong> page or type <strong>http://www.example.com/?q=admin/structure/block</strong> in browser address bar, where  <strong>www.example.com</strong> is your site URL.</p>
+									<p>Place blocks into needed regions and save settings.</p>
+									<p class="box-notification"><span>Please make sure to place all the required blocks at Home page.</span></p>
+									<p>In order to assign block to Home page only, do the following:</p>
+									<ol>
+										<li>Go to Visibility settings in block editing mode and switch to <strong>Pages</strong> tab.</li>
+										<li>In the field <strong>Show block on specific pages</strong> check <strong>Only the listed pages</strong>.</li>
+										<li>Type <code>&lt;front&gt;</code> to text field at the same tab.</li>
+									</ol>
+									<p><img src="img/block-settings-06.png" alt="Show only on front page"></p>
+								</article>
+
+								<article id="onepage_menu">
+									<h3>Menu</h3>
+									<p class="box-notification"><span>Make sure that <strong>Superfish</strong> module is enabled.</span></p>
+									<p>After placing all the blocks to needed regions, you can proceed with Main menu editing.</p>
+									<p>You can delete and change menu items order same way, as in regular menu.</p>
+									<p>In order to add/edit menu item, type link like <code>&lt;front&gt;#block-id</code> in <strong>Path </strong>field, where <strong>#block-id</strong> - block or region id.</p>
+									<p>The following id's are available for using:</p>
+									<ul class="square-list">
+										<li><strong>#home</strong> - page start id;</li>
+										<li><strong>#content</strong> - Content region id;</li>
+										<li><strong>#section_1_wrapper</strong> - Section 1 region id;</li>
+										<li><strong>#section_2_wrapper</strong> -  Section 2 region id;</li>
+										<li><strong>#section_3_wrapper</strong> -  Section 3 region id;</li>
+										<li><strong>#section_4_wrapper</strong> -  Section 4 region id;</li>
+										<li><strong>#section_5_wrapper</strong> -  Section 5 region id;</li>
+										<li><strong>#section_6_wrapper</strong> -  Section 6 region id;</li>
+										<li><strong>#section_7_wrapper</strong> -  Section 7 region id;</li>
+										<li><strong>#section_8_wrapper</strong> -  Section 8 region id;</li>
+										<li><strong>#section_9_wrapper</strong> -  Section 9 region id;</li>
+										<li><strong>#section_10_wrapper</strong> - Section 10 region id;</li>
+										<li>and any other block id.</li>
+									</ul>
+									<p>After all menu changes applied navigate to <strong>Structure → Blocks </strong> page or type <strong>http://www.example.com/?q=admin/structure/block</strong> in your browser address bar, where <strong>www.example.com</strong> is your site URL.</p>
+									<p>Move <strong>Superfish</strong> block to <strong>Menu</strong> region.</p>
+									<p>Make sure, that at block settings in <strong>Menu parent</strong> field is <strong>&lt;Main menu&gt;</strong> item checked.</p>
+									<p><img src="img/menu-manage-08.png" alt="Menu settings"></p>
+									Save settings.
+								</article>
+							</section>
+                           
 
 							<section class="block-templates item5" id="conclusion">
 								<h2><i class="icon-link"></i> Useful links <small><i>some more information</i></small></h2>
