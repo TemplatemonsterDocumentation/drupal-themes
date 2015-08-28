@@ -1,0 +1,51 @@
+{
+  "id": "content_manage",
+  "translations": {
+    "en": "Content management",
+    "ru": "Управление содержимым"
+  },
+  "articles": [
+    {
+      "id": "menu_manage",
+      "translations": {
+        "en": "Menu management",
+        "ru": "Управление меню"
+      }
+    },
+    {
+      "id": "node_manage",
+      "translations": {
+        "en": "Content type management",
+        "ru": "Управление материалами"
+      }
+    },
+    {
+      "id": "page_manage",
+      "translations": {
+        "en": "Page management",
+        "ru": "Управление страницами"
+      }
+    },
+    {
+      "id": "views_manage",
+      "translations": {
+        "en": "View management",
+        "ru": "Управление представлениями (Views)"
+      }
+    },
+    {
+      "id": "media_manage",
+      "translations": {
+        "en": "Media management",
+        "ru": "Управление медиа-содержимым"
+      }
+    },
+    {
+      "id": "shortcodes",
+      "translations": {
+        "en": "Shortcodes",
+        "ru": "Шоткоды"
+      }
+    }
+  ]
+}

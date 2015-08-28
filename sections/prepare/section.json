@@ -1,0 +1,45 @@
+{
+	"id":"prepare",
+	"translations":
+	{
+		"en":"Prepare",
+		"ru":"Подготовка"
+	},
+  "articles": [
+	{
+	  "id": "requirements",
+	  "translations": {
+		"en": "Minimal requirements",
+		"ru": "Минимальные требования"
+	  }
+	},
+	{
+	  "id": "downloading",
+	  "translations": {
+		"en": "Downloading Drupal engine",
+		"ru": "Скачивание движка Drupal"
+	  }
+	},
+	{
+	  "id": "extracting_files",
+	  "translations": {
+		"en": "Extracting files",
+		"ru": "Извлечение файлов"
+	  }
+	},
+	{
+	  "id": "upl_files",
+	  "translations": {
+		"en": "Uploading Drupal engine to a server",
+		"ru": "Загрузка Drupal на сервер"
+	  }
+	},
+	{
+	  "id": "db_creating",
+	  "translations": {
+		"en": "Creating a database",
+		"ru": "Создание базы данных"
+	  }
+	}
+  ]
+}

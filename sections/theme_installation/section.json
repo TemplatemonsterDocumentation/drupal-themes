@@ -1,0 +1,38 @@
+{
+	"id":"theme_installation",
+	"translations":
+	{
+		"en":"Drupal engine and theme installation",
+		"ru":"Установка Drupal и темы"
+	},
+  "articles": [
+	{
+	  "id": "inst_demo",
+	  "translations": {
+		"en": "Drupal theme installation with sample data",
+		"ru": "Установка темы с демонстрационными данными"
+	  }
+	},
+	{
+	  "id": "inst_no_demo",
+	  "translations": {
+		"en": "Drupal theme installation without sample data",
+		"ru": "Установка темы без демонстрационных данных"
+	  }
+	},
+	{
+	  "id": "inst_demo_exs_site",
+	  "translations": {
+		"en": "Drupal theme installation with sample data over the existing site",
+		"ru": "Установка темы с демонстрационными данными на существующий сайт"
+	  }
+	},
+	{
+	  "id": "inst_no_demo_exs_site",
+	  "translations": {
+		"en": "Drupal theme installation without sample data over the existing site",
+		"ru": "Установка темы без демонстрационных данных на существующий сайт"
+	  }
+	}
+  ]
+}
