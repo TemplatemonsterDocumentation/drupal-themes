@@ -1,0 +1,2 @@
+<h2 class="item4">Content management</h2>
+<p>In this section we will overview how the website content is created, and also how to manage any content type, if you've installed your template with sample data.</p>

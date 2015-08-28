@@ -1,0 +1,100 @@
+{
+  "id": "modules_config",
+  "translations": {
+    "en": "Configuration",
+    "ru": "Настройки"
+  },
+  "articles": [
+    {
+      "id": "drupal_settings",
+      "translations": {
+        "en": "Drupal settings",
+        "ru": "Настройки сайта"
+      }
+    },
+    {
+      "id": "theme_settings",
+      "translations": {
+        "en": "Theme settings",
+        "ru": "Настройки темы"
+      }
+    },
+    {
+      "id": "modules_settings",
+      "translations": {
+        "en": "Configuring modules",
+        "ru": "Настройки модулей"
+      }
+    },
+    {
+      "id": "block_settings",
+      "translations": {
+        "en": "Configuring blocks",
+        "ru": "Настройки блоков"
+      }
+    },
+    {
+      "id": "addthis_settings",
+      "translations": {
+        "en": "Configuring Social Share buttons",
+        "ru": "Настройки кнопок Поделиться"
+      }
+    },
+    {
+      "id": "animate_settings",
+      "translations": {
+        "en": "Using animation and configuring its settings",
+        "ru": "Настройка и использование анимации"
+      }
+    },
+    {
+      "id": "follow_settings",
+      "translations": {
+        "en": "Configuring social icons",
+        "ru": "Настройки блока социальных ссылок"
+      }
+    },
+    {
+      "id": "lazyload_settings",
+      "translations": {
+        "en": "Using LazyLoad effect",
+        "ru": "Настройка подгрузки изображений (LazyLoad)"
+      }
+    },
+    {
+      "id": "parallax_settings",
+      "translations": {
+        "en": "Using Parallax effect ",
+        "ru": "Настройка параллакса"
+      }
+    },
+    {
+      "id": "video_bg_settings",
+      "translations": {
+        "en": "Using video background",
+        "ru": "Настройка видео на фоне"
+      }
+    },
+    {
+      "id": "cookies_policy",
+      "translations": {
+        "en": "Cookie policy",
+        "ru": "Политика кукис"
+      }
+    },
+    {
+      "id": "google_fonts",
+      "translations": {
+        "en": "Google Web Fonts",
+        "ru": "Google Web Fonts"
+      }
+    },
+    {
+      "id": "chart",
+      "translations": {
+        "en": "Configuring blocks",
+        "ru": "Установка темы без демонстрационных данных на существующий сайт"
+      }
+    }
+  ]
+}
