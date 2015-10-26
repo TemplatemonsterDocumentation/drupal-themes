@@ -1,18 +1,13 @@
-<h3>Drupal theme installation with sample data</h3>
+<h3>Fullpackage theme installation</h3>
 <p class="alert alert-danger">
-	<span>Sample data demo profile should be uploaded to a server BEFORE you install the Drupal engine!</span>
+	<span>In this installation method you don't need to download and install the latest version of Drupal engine!</span>
 </p>
-<p>To install your theme with sample data you should perform the following steps:</p>
+<p>To install your theme with Fullpackage you should perform the following steps:</p>
 <ol class="index-list">
 	<li>
-		<p>Copy content of <strong>sample_data/</strong> folder from the template package to the root directory of your
-			Drupal installation on the server. You can overwrite the existing engine files. This folder contains theme
-			files, modules, libraries, media files, demo profile, and some corrections required for the proper site
-			functionality.</p>
-
-		<p class="alert alert-info">
-			<span>Replacement of these files adds a new option to the installation process so it will not effect the engine installation in any way.</span>
-		</p>
+		Copy content of <strong>fullpackage/fullpackage.zip</strong> archive to the root directory of your
+		Drupal installation on the server. This archive contains Drupal engine, theme files, modules, libraries, media files,
+		demo profile, and some corrections required for the proper site functionality.
 	</li>
 	<li>
 		Type your website URL in a browser's address bar to start Drupal installation process.
@@ -73,6 +68,7 @@
 		pages</strong>.
 	</li>
 </ol>
+
 <p>Feel free to check the following instructions:</p>
 <ul class="marked-list">
 	<li>
