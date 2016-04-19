@@ -60,12 +60,12 @@ function generateNavigation($sections, $lang, $section_param)
 						$article_name 	= $article['translations'][$lang];
 
 						$article_path	= '#' . $article_id;
-                        // Update article path if first in article section
-                        if ($key == 0) {
-                            $article_path = 'index.php?lang=' . $lang . '&section=' . $section_id .'#';
-                        }
-                        // Update article path if not in article section
-                        else if ($section_param != $section_id) {
+						// Update article path if first in article section
+						if ($key == 0) {
+							$article_path = 'index.php?lang=' . $lang . '&section=' . $section_id .'#';
+						}
+						// Update article path if not in article section
+						else if ($section_param != $section_id) {
 							$article_path = 'index.php?lang=' . $lang . '&section=' . $section_id . '#' . $article_id;
 						}
 						$html .= '<li class="article article__' . $article_id . '"><a class="article_link" href="' . $article_path . '" data-sectionId="' . $section_key . '" data-id="' . $article_id . '" data-section="' . $section_id . '">' . $article_name . '</a></li>';
@@ -174,7 +174,7 @@ function search_dir($dir)
 							'hash' => $sect_hash,
 							)
 						);
-					}					
+					}
 				}
 
 			} else {

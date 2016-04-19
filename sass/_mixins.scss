@@ -1,178 +1,178 @@
 //==========================================================
-//                        MIXINS
+//						MIXINS
 //==========================================================
 
 // Note: Some of described mixins in this file requires the ie conditional comments
 //
 // For IE < 9
 // <!--[if lt IE 9]>
-//    <html class='lt-ie9'>
+//		<html class='lt-ie9'>
 // <![endif]-->
 //
 
 // Opacity
 @mixin opacity($opacity) {
-  opacity: $opacity;
+	opacity: $opacity;
 
-  .lt-ie9 & {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity})";
-    filter: alpha(opacity=$opacity*100);
-  }
+	.lt-ie9 & {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity})";
+		filter: alpha(opacity=$opacity*100);
+	}
 }
 
 
 @mixin clip($x1, $x2, $y1, $y2){
-  clip: rect($y1,$x2,$y2,$x1);
+	clip: rect($y1,$x2,$y2,$x1);
 }
 
 // Background-rgba
 @mixin background($rgb, $opacity) {
-  background: rgba($rgb, $opacity);
+	background: rgba($rgb, $opacity);
 
-  .lt-ie9 & {
-    background: none;
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str(rgba($rgb, $opacity))}', endColorstr='#{ie-hex-str(rgba($rgb, $opacity))}')";
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str(rgba($rgb, $opacity))}', endColorstr='#{ie-hex-str(rgba($rgb, $opacity))}');
-    zoom: 1;
-  }
+	.lt-ie9 & {
+		background: none;
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str(rgba($rgb, $opacity))}', endColorstr='#{ie-hex-str(rgba($rgb, $opacity))}')";
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str(rgba($rgb, $opacity))}', endColorstr='#{ie-hex-str(rgba($rgb, $opacity))}');
+		zoom: 1;
+	}
 }
 
 // Transition
 @mixin transition($trsn) {
-  -moz-transition: $trsn;
-  -o-transition: $trsn;
-  -webkit-transition: $trsn;
-  transition: $trsn;
+	-moz-transition: $trsn;
+	-o-transition: $trsn;
+	-webkit-transition: $trsn;
+	transition: $trsn;
 }
 
 // Transition Delay
 @mixin transition-delay($trsn-d) {
-  -moz-transition-delay: $trsn-d;
-  -o-transition-delay: $trsn-d;
-  -webkit-transition-delay: $trsn-d;
-  transition-delay: $trsn-d;
+	-moz-transition-delay: $trsn-d;
+	-o-transition-delay: $trsn-d;
+	-webkit-transition-delay: $trsn-d;
+	transition-delay: $trsn-d;
 }
 
 // Animation
 @mixin animation($anim) {
-  -webkit-animation: $anim;
-  -moz-animation: $anim;
-  -ms-animation: $anim;
-  -o-animation: $anim;
-  animation: $anim;
+	-webkit-animation: $anim;
+	-moz-animation: $anim;
+	-ms-animation: $anim;
+	-o-animation: $anim;
+	animation: $anim;
 }
 
 // Transform Origin
 @mixin transform-origin($trfm-o) {
-  -moz-transform-origin: $trfm-o;
-  -ms-transform-origin: $trfm-o;
-  -o-transform-origin: $trfm-o;
-  -webkit-transform-origin: $trfm-o;
-  transform-origin: $trfm-o;
+	-moz-transform-origin: $trfm-o;
+	-ms-transform-origin: $trfm-o;
+	-o-transform-origin: $trfm-o;
+	-webkit-transform-origin: $trfm-o;
+	transform-origin: $trfm-o;
 }
 
 // Transform
 @mixin transform($trfm) {
-  -moz-transform: $trfm;
-  -ms-transform: $trfm;
-  -o-transform: $trfm;
-  -webkit-transform: $trfm;
-  transform: $trfm;
+	-moz-transform: $trfm;
+	-ms-transform: $trfm;
+	-o-transform: $trfm;
+	-webkit-transform: $trfm;
+	transform: $trfm;
 }
 
 // Box Sizing
 @mixin box-sizing($bs) {
-  -moz-box-sizing: $bs;
-  -webkit-box-sizing: $bs;
-  box-sizing: $bs;
+	-moz-box-sizing: $bs;
+	-webkit-box-sizing: $bs;
+	box-sizing: $bs;
 }
 
 // Border Radius
 @mixin border-radius($border-radius) {
-  -webkit-border-radius: $border-radius;
-  -moz-border-radius: $border-radius;
-  border-radius: $border-radius;
+	-webkit-border-radius: $border-radius;
+	-moz-border-radius: $border-radius;
+	border-radius: $border-radius;
 }
 
 // Box Shadow
 @mixin box-shadow($box-shadow) {
-  -webkit-box-shadow: $box-shadow;
-  -moz-box-shadow: $box-shadow;
-  box-shadow: $box-shadow;
+	-webkit-box-shadow: $box-shadow;
+	-moz-box-shadow: $box-shadow;
+	box-shadow: $box-shadow;
 }
 
 // Reset Input
 @mixin reset-input() {
-  outline: none;
-  background-color: transparent;
-  border: none;
-  -webkit-appearance: none;
-  border-radius: 0;
-  vertical-align: baseline;
-  box-shadow: none;
+	outline: none;
+	background-color: transparent;
+	border: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+	vertical-align: baseline;
+	box-shadow: none;
 }
 
 // Hide Text
 @mixin hide-text {
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
 }
 
 // User Select
 @mixin user-select($select: none) {
-  -webkit-user-select: $select;
-  -khtml-user-select: $select;
-  -moz-user-select: $select;
-  -ms-user-select: $select;
-  user-select: $select;
+	-webkit-user-select: $select;
+	-khtml-user-select: $select;
+	-moz-user-select: $select;
+	-ms-user-select: $select;
+	user-select: $select;
 }
 
 // Triangle
 @mixin triangle($dir, $w, $h, $clr) {
-  width: 0;
-  height: 0;
-  border-style: solid;
+	width: 0;
+	height: 0;
+	border-style: solid;
 
-  @if $dir == top {
-    border-width: 0 $w/2 $h $w/2;
-    border-color: transparent transparent $clr transparent;
-  } @else if $dir == bottom {
-    border-width: $h $w/2 0 $w/2;
-    border-color: $clr transparent transparent transparent;
-  } @else if $dir == left {
-    border-width: $h/2 $w $h/2 0;
-    border-color: transparent $clr transparent transparent;
-  } @else if $dir == right {
-    border-width: $h/2 0 $h/2 $w;
-    border-color: transparent transparent transparent $clr;
-  } @else if $dir == top_left {
-    border-width: $w $w 0 0;
-    border-color: $clr transparent transparent transparent;
-  } @else if $dir == top_right {
-    border-width: 0 $w $w 0;
-    border-color: transparent $clr transparent transparent;
-  } @else if $dir == bottom_right {
-    border-width: 0 0 $w $w;
-    border-color: transparent transparent $clr transparent;
-  } @else if $dir == bottom_left {
-    border-width: $w 0 0 $w;
-    border-color: transparent transparent transparent $clr;
-  }
+	@if $dir == top {
+		border-width: 0 $w/2 $h $w/2;
+		border-color: transparent transparent $clr transparent;
+	} @else if $dir == bottom {
+		border-width: $h $w/2 0 $w/2;
+		border-color: $clr transparent transparent transparent;
+	} @else if $dir == left {
+		border-width: $h/2 $w $h/2 0;
+		border-color: transparent $clr transparent transparent;
+	} @else if $dir == right {
+		border-width: $h/2 0 $h/2 $w;
+		border-color: transparent transparent transparent $clr;
+	} @else if $dir == top_left {
+		border-width: $w $w 0 0;
+		border-color: $clr transparent transparent transparent;
+	} @else if $dir == top_right {
+		border-width: 0 $w $w 0;
+		border-color: transparent $clr transparent transparent;
+	} @else if $dir == bottom_right {
+		border-width: 0 0 $w $w;
+		border-color: transparent transparent $clr transparent;
+	} @else if $dir == bottom_left {
+		border-width: $w 0 0 $w;
+		border-color: transparent transparent transparent $clr;
+	}
 }
 
 // Clearfix
 @mixin clearfix {
-  &:before,
-  &:after {
-    display: table;
-    content: "";
-    line-height: 0;
-  }
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+		line-height: 0;
+	}
 
-  &:after {
-    clear: both;
-  }
+	&:after {
+		clear: both;
+	}
 }
 
 // Variables
@@ -243,18 +243,18 @@ $fa-thumbs-o-up: '\f087';
 $fa-quote-left: '\f10d';
 
 @mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content; 
-  }
-  @-moz-keyframes #{$name} {
-    @content;
-  }
-  @-ms-keyframes #{$name} {
-    @content;
-  }
-  @keyframes #{$name} {
-    @content;
-  } 
+	@-webkit-keyframes #{$name} {
+		@content; 
+	}
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+	@-ms-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	} 
 }
 
 /// Gives a card depth effect.
@@ -263,33 +263,33 @@ $fa-quote-left: '\f10d';
 /// @requires {function} top-shadow
 /// @requires {function} bottom-shadow
 @mixin card($depth) {
-  @if $depth < 1 {
-    box-shadow: none;
-  } @else if $depth > 5 {
-    @warn "Invalid $depth `#{$depth}` for mixin `card`.";
-  } @else {
-    box-shadow: bottom-shadow($depth), top-shadow($depth);  
-  }
+	@if $depth < 1 {
+		box-shadow: none;
+	} @else if $depth > 5 {
+		@warn "Invalid $depth `#{$depth}` for mixin `card`.";
+	} @else {
+		box-shadow: bottom-shadow($depth), top-shadow($depth);	
+	}
 }
 
 /// Computes a top-shadow for a card effect.
 /// @param {Number} $depth - depth level
 /// @return {List}
 @function top-shadow($depth) {
-  $primary-offset: nth(1.5 3 10 14 19, $depth) * 1px;
-  $blur: nth(1.5 3 10 14 19, $depth) * 4px;
-  $color: rgba(black, nth(.12 .16 .19 .25 .30, $depth));
+	$primary-offset: nth(1.5 3 10 14 19, $depth) * 1px;
+	$blur: nth(1.5 3 10 14 19, $depth) * 4px;
+	$color: rgba(black, nth(.12 .16 .19 .25 .30, $depth));
 
-  @return 0 $primary-offset $blur $color;
+	@return 0 $primary-offset $blur $color;
 }
 
 /// Computes a bottom-shadow for a card effect.
 /// @param {Number} $depth - depth level
 /// @return {List}
 @function bottom-shadow($depth) {
-  $primary-offset: nth(1.5 3 6 10 15, $depth) * 1px;
-  $blur: nth(1 3 3 5 6, $depth) * 4px;
-  $color: rgba(black, nth(.24 .23 .23 .22 .22, $depth));
+	$primary-offset: nth(1.5 3 6 10 15, $depth) * 1px;
+	$blur: nth(1 3 3 5 6, $depth) * 4px;
+	$color: rgba(black, nth(.24 .23 .23 .22 .22, $depth));
 
-  @return 0 $primary-offset $blur $color;
+	@return 0 $primary-offset $blur $color;
 }

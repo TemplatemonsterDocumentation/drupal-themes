@@ -1,23 +1,23 @@
 {
-  "id": "onepage_template",
-  "translations": {
-    "en": "One-page templates",
-    "ru": "Одностраничные шаблоны"
-  },
-  "articles": [
-    {
-      "id": "onepage_content",
-      "translations": {
-        "en": "Content",
-        "ru": "Содержимое"
-      }
-    },
-    {
-      "id": "onepage_menu",
-      "translations": {
-        "en": "Menu",
-        "ru": "Menu"
-      }
-    }
-  ]
+	"id": "onepage_template",
+	"translations": {
+		"en": "One-page templates",
+		"ru": "Одностраничные шаблоны"
+	},
+	"articles": [
+		{
+			"id": "onepage_content",
+			"translations": {
+				"en": "Content",
+				"ru": "Содержимое"
+			}
+		},
+		{
+			"id": "onepage_menu",
+			"translations": {
+				"en": "Menu",
+				"ru": "Menu"
+			}
+		}
+	]
 }
