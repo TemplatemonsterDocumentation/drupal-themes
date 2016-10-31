@@ -78,7 +78,7 @@
 <p>Вы можете просмотреть следующие инструкции:</p>
 <ul class="marked-list">
 	<li>
-		<a href="/help/ru/how-to-install-drupal-template-using-demo-profile-possible-issues.html" target="_blank">Как
+		<a href="/help/how-to-install-drupal-template-using-demo-profile-possible-issues.html" target="_blank">Как
 		установить шаблон Drupal с помощью демонстрационного профиля + возможные проблемы</a>
 	</li>
 </ul>
